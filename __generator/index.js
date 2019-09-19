@@ -29,20 +29,21 @@ let generate = (count, rule) => {
 };
 
 let students = [
-  "pascale",
-  "marius",
-  "nadia",
-  "stephanie",
-  "marc",
-  "severin",
-  "matthias",
-  "lars",
-  "nils",
-  "tieu",
-  "natasha",
-  "wolfgang",
-  "nicole",
-  "stefan"
+  "dan",
+  "nina",
+  "sam",
+  "samira",
+  "stefanos",
+  "patrick",
+  "chantal",
+  "joshua",
+  "desiree",
+  "sina",
+  "dhondup",
+  "selina",
+  "flavia",
+  "cheyenne",
+  "dominique"
 ];
 
 let quote = [
@@ -177,7 +178,7 @@ students.forEach(student => {
       ])
     );
 
-  fs.writeFileSync("../students/" + student + "/manus.txt", exampleOut);
+  fs.writeFileSync("./manus/" + student + ".txt", exampleOut);
 });
 
 console.log(
