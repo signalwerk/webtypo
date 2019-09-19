@@ -17,7 +17,10 @@ const shuffler = R.curry((random, list) => {
 
 const pickRandom = R.ifElse(
   R.is(Array),
-  R.compose(R.head, shuffle),
+  R.compose(
+    R.head,
+    shuffle
+  ),
   R.identity
 );
 
