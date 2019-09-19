@@ -1,0 +1,56 @@
+ul,
+ol {
+  padding-left: 1em;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li > ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+ul > li::before {
+  content: "–\00A0";
+  color: var(--blue-color);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ol {
+  counter-reset: ol-li;
+  padding-left: 0;
+}
+
+ol > li {
+  position: relative;
+  margin: 0 0 0 1.75em;
+  list-style: none;
+  padding-bottom: 0.2em;
+}
+
+ol > li:before {
+  content: counter(ol-li);
+  counter-increment: ol-li;
+
+  position: absolute;
+  top: 0.1em;
+
+  left: -1.75em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+
+  font-size: 0.85em;
+  font-weight: 700;
+  text-align: center;
+
+  color: white;
+  background: var(--blue-color);
+}

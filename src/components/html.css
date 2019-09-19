@@ -1,0 +1,11 @@
+@import "./breakpoints-var";
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  @media (--breakpoint-l) {
+    font-size: 16px;
+  }
+}

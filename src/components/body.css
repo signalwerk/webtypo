@@ -1,0 +1,13 @@
+body {
+  /* critical:start */
+  margin: 0;
+  /* critical:end */
+  padding: 0;
+}
+
+body,
+p,
+ol,
+ul {
+  font-size: 1rem;
+}

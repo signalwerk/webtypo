@@ -1,0 +1,24 @@
+/* inspiration
+- https://alligator.io/css/minimal-css-reset/
+*/
+
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700"); */
+
+:root {
+  --green-color: #006984;
+  --blue-color: #0054a2;
+  --gray-color: #e6e8ea;
+  --gray-red: #f00;
+}
+
+::selection {
+  background: var(--blue-color);
+  color: white;
+  text-shadow: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

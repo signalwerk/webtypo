@@ -1,0 +1,8 @@
+figure {
+  /* critical */
+  margin: 1em 0 1em 0;
+}
+
+div > figure {
+  margin-top: 0;
+}

@@ -1,0 +1,13 @@
+
+a {
+    text-decoration: none;
+    color: var(--blue-color);
+}
+
+a:visited {
+    color: var(--blue-color);
+}
+
+a:hover {
+    color: inherit;
+}

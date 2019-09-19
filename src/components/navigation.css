@@ -1,0 +1,12 @@
+.navigation {
+  /* critical */
+  background: #d3d3d3;
+
+  &__content {
+    width: 92%;
+    max-width: 38rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.3rem 0;
+  }
+}

@@ -1,0 +1,51 @@
+@import "./breakpoints-var";
+
+.content {
+  /* critical:start */
+  width: 92%;
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+  /* background-color: red; */
+  /* critical:end */
+
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+
+.grid {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+
+header,
+.col-content,
+.col-second {
+  /* critical */
+  max-width: 100%;
+  flex-basis: 100%;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+@media (--breakpoint-l) {
+  .col-content {
+    /* critical */
+
+    max-width: 70%;
+    flex-basis: 70%;
+  }
+  .col-second {
+    /* critical */
+    max-width: 27%;
+    flex-basis: 27%;
+    background-color: yellow;
+    height: 20rem;
+  }
+}

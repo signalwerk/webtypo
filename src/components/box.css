@@ -1,0 +1,26 @@
+.box {
+  background-color: var(--gray-color);
+  border-top: 0.1em solid var(--blue-color);
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  padding-bottom: 0.1rem;
+}
+
+.box p,
+.box h3,
+.box h4,
+.box ul {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.box ul {
+  padding-left: 2rem;
+}
+
+.box h3 {
+  border-bottom: 0.1em solid white;
+  padding-bottom: 0.5em;
+}

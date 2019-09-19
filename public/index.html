@@ -1,0 +1,25 @@
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{description}}" />
+    <link
+      rel="stylesheet"
+      href="{{root}}/styles/main.critical.css"
+      media="all"
+    />
+    <link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="{{root}}/styles/main.rest.css"
+      media="all"
+    />
+    <script src="{{root}}/index.js"></script>
+  </head>
+  <body>
+    {{home}} <div class="navigation"><div class="navigation__content"><a href="{{root}}">Home</a></div></div> {{/home}}
+    <article class="content">{{markdownContent}}</article>
+  </body>
+</html>

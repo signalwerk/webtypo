@@ -1,0 +1,34 @@
+@import "../breakpoints-var";
+
+.slide-list {
+  @media (--breakpoint-l) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  h4,
+  ul {
+    @media (--breakpoint-l) {
+      flex-shrink: 1;
+      flex-grow: 1;
+    }
+  }
+
+  h4 {
+    @media (--breakpoint-l) {
+      max-width: 45%;
+      flex-basis: 45%;
+    }
+  }
+
+  ul {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    @media (--breakpoint-l) {
+      margin-top: 0.3rem;
+      max-width: 50%;
+      flex-basis: 50%;
+    }
+  }
+}
