@@ -1,2 +1,4 @@
 /dist
 /node_modules
+ci/.ssh/id_rsa
+ci/.ssh/secret.key
