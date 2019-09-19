@@ -91,7 +91,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CopyWebpackPlugin([{ from: "texts/assets", to: "assets" }]),
+    new CopyWebpackPlugin([{ from: "content/assets", to: "assets" }]),
 
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
