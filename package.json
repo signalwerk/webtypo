@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "lint": "eslint --ext .js --ignore-path .gitignore .",
-    "build": "NODE_ENV=production webpack",
+    "build": "NODE_ENV=production webpack && npm run gh-pages",
+    "gh-pages": "cp ./public/CNAME ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
