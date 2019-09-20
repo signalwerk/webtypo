@@ -16,16 +16,19 @@ Das Dezimaltrennzeichen ist in der Schweiz nicht einheitlich normiert. Dennoch e
 ## Zifferngruppierung
 Ziffern ab fünf stellen werden immer in Dreiergruppen (von rechts) formatiert.
 
-> `20¦000` (20&#8239;000)
+* Empfohlen
+> `20¦000` (20&#8239;000) <br>
 > `20¦000¦000` (20&#8239;000&#8239;000)
 
-* nicht
-> `2¦000` (2&#8239;000)
+* Nicht
+> ~~`2¦000` (2&#8239;000)~~
 
 
 ## Gleichungen
 
-> `1¦+¦2␣=␣3` (1&#8239;+&#8239;2 = 3)<br> `1¦–¦2␣=␣−1` (1&#8239;–&#8239;2 = –1)
+* Empfohlen
+> `1¦+¦2␣=␣3` (1&#8239;+&#8239;2 = 3)<br>
+> `1¦–¦2␣=␣−1` (1&#8239;–&#8239;2 = –1)
 
 
 
