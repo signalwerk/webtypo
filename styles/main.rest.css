@@ -135,11 +135,18 @@ figcaption {
   margin-top: 0.2rem;
 }
 blockquote {
-  margin: 1em 0;
+  font-size: 2rem;
+  margin: 1rem 0;
   padding: 0 1em;
   border-left: 0.25em solid #0054a2;
   border-left: 0.25em solid var(--blue-color);
 }
+blockquote > p {
+    font-size: inherit;
+  }
+blockquote > p code {
+      font-size: 1rem;
+    }
 h1,
 h2,
 h3,
@@ -159,15 +166,15 @@ h1 {
 }
 h2 {
   font-size: 1.1rem;
-  margin-top: 1.2em;
+  margin-top: 3em;
 }
 h3 {
   font-size: 1rem;
-  margin-top: .7em;
+  margin-top: 1.5em;
   margin-bottom: 0.1em;
 }
-h1, h2 {
-
+h1,
+h2 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }

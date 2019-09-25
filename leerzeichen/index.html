@@ -148,87 +148,84 @@
 
 
 <h2 id="geschützte-schmales-leerzeichen">Geschützte schmales Leerzeichen</h2>
-<h3 id="beispiele">Beispiele</h3>
-<ul>
-<li>Datum<blockquote>
-<p><code>18.¦August␣2018</code> (18.&#8239;August 2018) <br>
-<code>18.¦8.¦2018</code> (18.&#8239;8.&#8239;2018)</p>
-</blockquote>
-</li>
-<li>Telefonnummern<blockquote>
-<p><code>+41¦78¦700¦10¦10</code> (+41&#8239;78&#8239;700&#8239;10&#8239;10)</p>
-</blockquote>
-</li>
-<li>Abkürzung<blockquote>
-<p><code>z.¦B.</code> (z.&#8239;B.) <br> <code>Nr.¦1</code> (Nr.&#8239;1),</p>
-</blockquote>
-</li>
-<li>Masseinheiten<blockquote>
-<p><code>100¦km</code> (100&#8239;km)<br> <code>30¦°C</code> (30&#8239;°C)</p>
-</blockquote>
-</li>
-<li>Zifferngruppierung<blockquote>
-<p><code>20¦000</code> (20&#8239;000)</p>
-</blockquote>
-</li>
-<li>Gleichungen<blockquote>
-<p><code>1¦+¦2␣=␣3</code> (1&#8239;+&#8239;2 = 3)<br> <code>1¦–¦2␣=␣−1</code> (1&#8239;–&#8239;2 = –1)</p>
-</blockquote>
-</li>
-<li>Paragraf<blockquote>
-<p><code>§¦10</code> (§&#8239;10)</p>
-</blockquote>
-</li>
-<li>Titel<blockquote>
-<p><code>Prof.¦Dr.¦Moser</code> (Prof.&#8239;Dr.&#8239;Moser)<br> <code>Lic.¦Jur.¦Reto␣A.¦Kramer</code> (Lic.&#8239;Jur.&#8239;Reto A.&#8239;Kramer)</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="jedoch">Jedoch</h3>
-<ul>
-<li>Winkelgrad<blockquote>
-<p>30°</p>
-</blockquote>
-</li>
-</ul>
 <div class="box">
 
 <h3 id="eingabe">Eingabe</h3>
-<h4 id="schmales-leerzeichen">schmales Leerzeichen</h4>
-<p>(THIN SPACE)</p>
-<ul>
-<li>Text: &#39;&thinsp;&#39;</li>
-<li>HTML: <code>&amp;thinsp;</code></li>
-<li>Unicode DEZ: <code>&amp;#8201;</code></li>
-<li>Unicode HEX: <code>&amp;#x2009;</code></li>
-</ul>
-<h4 id="schmales-geschütztes-leerzeichen">schmales geschütztes Leerzeichen</h4>
-<p>(NARROW NO-BREAK SPACE)</p>
+<h4 id="schmales-geschütztes-leerzeichen-¦">schmales geschütztes Leerzeichen <code>¦</code></h4>
+<p>Narrow No-break Space</p>
 <ul>
 <li>Text: &#39;&#8239;&#39;</li>
 <li>Unicode DEZ: <code>&amp;#8239;</code>  </li>
 <li>Unicode HEX: <code>&amp;#x202f;</code></li>
 </ul>
+<!--
+####  schmales Leerzeichen
+(THIN SPACE)
+* Text: '&thinsp;'
+* HTML: `&thinsp;`
+* Unicode DEZ: `&#8201;`
+* Unicode HEX: `&#x2009;`
+-->
+
 </div>
 
-
-
+<h3 id="datum">Datum</h3>
+<blockquote>
+<p>18.&#8239;August&nbsp;2018 <br><code>18.¦August␣2018</code></p>
+</blockquote>
+<blockquote>
+<p>18.&#8239;8.&#8239;2018 <br><code>18.¦8.¦2018</code></p>
+</blockquote>
+<h3 id="telefonnummern">Telefonnummern</h3>
+<blockquote>
+<p>+41&#8239;78&#8239;700&#8239;10&#8239;10 <br><code>+41¦78¦700¦10¦10</code></p>
+</blockquote>
+<h3 id="abkürzung">Abkürzung</h3>
+<blockquote>
+<p>z.&#8239;B. <br> <code>z.¦B.</code></p>
+</blockquote>
+<blockquote>
+<p> Nr.&#8239;1 <br> <code>Nr.¦1</code></p>
+</blockquote>
+<h3 id="masseinheiten">Masseinheiten</h3>
+<blockquote>
+<p>100&#8239;km <br> <code>100¦km</code></p>
+</blockquote>
+<blockquote>
+<p>30&#8239;°C <br> <code>30¦°C</code></p>
+</blockquote>
+<p>Nicht bei Winkelgrad!</p>
+<blockquote>
+<p>30°<br> <code>30°</code></p>
+</blockquote>
+<h3 id="zifferngruppierung">Zifferngruppierung</h3>
+<blockquote>
+<p>20&#8239;000 <br> <code>20¦000</code></p>
+</blockquote>
+<h3 id="gleichungen">Gleichungen</h3>
+<blockquote>
+<p>1&#8239;+&#8239;2 = 3 <br> <code>1¦+¦2␣=␣3</code></p>
+</blockquote>
+<blockquote>
+<p>1&#8239;–&#8239;2 = –1  <br> <code>1¦–¦2␣=␣−1</code></p>
+</blockquote>
+<h3 id="paragraf">Paragraf</h3>
+<blockquote>
+<p>§&#8239;10 <br> <code>§¦10</code></p>
+</blockquote>
+<h3 id="titel">Titel</h3>
+<blockquote>
+<p>Prof.&#8239;Dr.&#8239;Moser <br> <code>Prof.¦Dr.¦Moser</code></p>
+</blockquote>
+<blockquote>
+<p>Lic.&#8239;Jur.&#8239;Reto A.&#8239;Kramer <br>  <code>Lic.¦Jur.¦Reto␣A.¦Kramer</code></p>
+</blockquote>
 <h2 id="geschütztes-leerzeichen">Geschütztes Leerzeichen</h2>
-<ul>
-<li>Wörter mit dazugehöriger Ziffer<blockquote>
-<p><code>10␣Liter</code><br/> <code>Seite␣3</code><br/> <code>DIN␣7000</code></p>
-</blockquote>
-</li>
-<li>Firmennamen<blockquote>
-<p><code>Grau␣AG</code><br/> <code>Blau␣GmbH</code><br/> <code>McKinsey␣&amp;␣Co.</code></p>
-</blockquote>
-</li>
-</ul>
 <div class="box">
 
 <h3 id="eingabe-1">Eingabe</h3>
-<h4 id="geschütztes-leerzeichen-1">geschütztes Leerzeichen</h4>
-<p>(no-break space)</p>
+<h4 id="geschütztes-leerzeichen-␣">geschütztes Leerzeichen <code>␣</code></h4>
+<p>no-break space</p>
 <ul>
 <li>Text: &#39;&nbsp;&#39;</li>
 <li>HTML: <code>&amp;nbsp;</code></li>
@@ -237,25 +234,45 @@
 </ul>
 </div>
 
-<h2 id="ziffer-leerzeichen">Ziffer-Leerzeichen</h2>
-<p>Gleiche Breite wie eine Tabellenziffer.</p>
+<h3 id="wörter-mit-dazugehöriger-ziffer">Wörter mit dazugehöriger Ziffer</h3>
 <blockquote>
-<p>0&#8199;0<br>000</p>
+<p>10&nbsp;Liter <br/> <code>10␣Liter</code></p>
 </blockquote>
+<blockquote>
+<p>Seite&nbsp;3 <br/> <code>Seite␣3</code></p>
+</blockquote>
+<blockquote>
+<p>DIN&nbsp;7000 <br/> <code>DIN␣7000</code></p>
+</blockquote>
+<h3 id="firmennamen">Firmennamen</h3>
+<blockquote>
+<p>Grau&nbsp;AG <br/> <code>Grau␣AG</code></p>
+</blockquote>
+<blockquote>
+<p>Blau&nbsp;GmbH <br/> <code>Blau␣GmbH</code></p>
+</blockquote>
+<blockquote>
+<p>McKinsey&nbsp;&amp;&nbsp;Co. <br/> <code>McKinsey␣&amp;␣Co.</code></p>
+</blockquote>
+<h2 id="ziffer-leerzeichen">Ziffer-Leerzeichen</h2>
 <div class="box">
 
 <h3 id="eingabe-2">Eingabe</h3>
 <h4 id="ziffer-leerzeichen-1">Ziffer-Leerzeichen</h4>
-<p>(figure space)</p>
+<p>figure space</p>
 <ul>
 <li>Text: &#39;&#8199;&#39;</li>
 <li>Unicode DEZ: <code>&amp;#8199;</code></li>
 <li>Unicode HEX: <code>&amp;#x2007;</code></div>
 
 
-
 </li>
 </ul>
+<h3 id="tabellendarstellung">Tabellendarstellung</h3>
+<p>Gleiche Breite wie eine Tabellenziffer.</p>
+<blockquote>
+<p>0&#8199;0<br>000</p>
+</blockquote>
 <h2 id="quellen--infos">Quellen &amp; Infos</h2>
 <div class="box">
 
