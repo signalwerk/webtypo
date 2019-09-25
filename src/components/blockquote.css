@@ -1,5 +1,14 @@
 blockquote {
-  margin: 1em 0;
+  font-size: 2rem;
+  margin: 1rem 0;
   padding: 0 1em;
   border-left: 0.25em solid var(--blue-color);
+
+  > p {
+    font-size: inherit;
+
+    code {
+      font-size: 1rem;
+    }
+  }
 }

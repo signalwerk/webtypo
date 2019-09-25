@@ -6,16 +6,14 @@ description: Schrägstrich
 # Schrägstrich
 ## Schrägstrich
 Kein Leerzeichen vor oder nach Schrägstrich
-> `Schuljahr 2014/2015`
+> Schuljahr 2014/2015 <br> `Schuljahr 2014/2015`
 
 ## Division
 In Gleichungen ist das Divisionszeichen zu verwenden und kein Schrägstrich
-> `50¦✕¦50¦÷¦5␣=␣b` (50 ✕ 50 ÷ 5 = b)
+> 50 ✕ 50 ÷ 5 = b <br> `50¦✕¦50¦÷¦5␣=␣b`
 
 ## Bruchzeichen
-> 1<sup>1</sup>&frasl;<sub>2</sub> (nicht 1<sup>1</sup>/<sub>2</sub>)
-
-HTML: `1<sup>1</sup>&frasl;<sub>2</sub>`
+> 1<sup>1</sup>&frasl;<sub>2</sub> (nicht 1<sup>1</sup>/<sub>2</sub>) <br> `HTML: 1<sup>1</sup>&frasl;<sub>2</sub>`
 
 <div class="box">
 

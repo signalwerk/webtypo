@@ -6,6 +6,15 @@ description: Anführungszeichen
 # Anführungszeichen
 
 
+<div class="box">
+
+### Eingabe
+#### Apple Tastatur (CH-DE-Layout)
+* Anführungszeichen (öffnend): `«` = `Alt+,`
+* Anführungszeichen (schliessend): `»` = `Alt+sift+,`
+
+</div>
+
 
 
 ## Schweiz
@@ -16,15 +25,6 @@ In der Schweiz werden die Anführungszeichen mit den so genannten Guillemets ges
 Kommen innerhalb der Anführungszeichen weitere Anführungen vor, so kommen die einfachen Anführungszeichen zur Anwendung:
 > «Ich lese die Site ‹Typo-Nerd› täglich.»
 
-
-<div class="box">
-
-### Eingabe
-#### Apple Tastatur (CH-DE-Layout)
-* Anführungszeichen (öffnend): `«` = `Alt+,`
-* Anführungszeichen (schliessend): `»` = `Alt+sift+,`
-
-</div>
 
 
 ## Französisch

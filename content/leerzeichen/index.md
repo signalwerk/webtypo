@@ -139,63 +139,65 @@ Je nach Anwendung müssen andere Leerzeichen zum Einsatz kommen.
 
 ## Geschützte schmales Leerzeichen
 
-### Beispiele
-* Datum
-> `18.¦August␣2018` (18.&#8239;August 2018) <br>
-> `18.¦8.¦2018` (18.&#8239;8.&#8239;2018)
-* Telefonnummern
-> `+41¦78¦700¦10¦10` (+41&#8239;78&#8239;700&#8239;10&#8239;10)
-* Abkürzung
-> `z.¦B.` (z.&#8239;B.) <br> `Nr.¦1` (Nr.&#8239;1),
-* Masseinheiten
-> `100¦km` (100&#8239;km)<br> `30¦°C` (30&#8239;°C)
-* Zifferngruppierung
-> `20¦000` (20&#8239;000)
-* Gleichungen
-> `1¦+¦2␣=␣3` (1&#8239;+&#8239;2 = 3)<br> `1¦–¦2␣=␣−1` (1&#8239;–&#8239;2 = –1)
-* Paragraf
-> `§¦10` (§&#8239;10)
-* Titel
-> `Prof.¦Dr.¦Moser` (Prof.&#8239;Dr.&#8239;Moser)<br> `Lic.¦Jur.¦Reto␣A.¦Kramer` (Lic.&#8239;Jur.&#8239;Reto A.&#8239;Kramer)
-
-### Jedoch
-* Winkelgrad
-> 30°
-
-
 <div class="box">
 
 ### Eingabe
+
+####  schmales geschütztes Leerzeichen `¦`
+Narrow No-break Space
+* Text: '&#8239;'
+* Unicode DEZ: `&#8239;`  
+* Unicode HEX: `&#x202f;`
+
+<!--
 ####  schmales Leerzeichen
 (THIN SPACE)
 * Text: '&thinsp;'
 * HTML: `&thinsp;`
 * Unicode DEZ: `&#8201;`
 * Unicode HEX: `&#x2009;`
-
-####  schmales geschütztes Leerzeichen
-(NARROW NO-BREAK SPACE)
-* Text: '&#8239;'
-* Unicode DEZ: `&#8239;`  
-* Unicode HEX: `&#x202f;`
+-->
 
 </div>
 
+### Datum
+> 18.&#8239;August&nbsp;2018 <br>`18.¦August␣2018`
 
+> 18.&#8239;8.&#8239;2018 <br>`18.¦8.¦2018`
+### Telefonnummern
+> +41&#8239;78&#8239;700&#8239;10&#8239;10 <br>`+41¦78¦700¦10¦10`
+### Abkürzung
+> z.&#8239;B. <br> `z.¦B.`
+
+>  Nr.&#8239;1 <br> `Nr.¦1`
+### Masseinheiten
+> 100&#8239;km <br> `100¦km`
+
+> 30&#8239;°C <br> `30¦°C`
+
+Nicht bei Winkelgrad!
+> 30°<br> `30°`
+
+### Zifferngruppierung
+> 20&#8239;000 <br> `20¦000`
+### Gleichungen
+> 1&#8239;+&#8239;2 = 3 <br> `1¦+¦2␣=␣3`
+
+> 1&#8239;–&#8239;2 = –1  <br> `1¦–¦2␣=␣−1`
+### Paragraf
+> §&#8239;10 <br> `§¦10`
+### Titel
+> Prof.&#8239;Dr.&#8239;Moser <br> `Prof.¦Dr.¦Moser`
+
+> Lic.&#8239;Jur.&#8239;Reto A.&#8239;Kramer <br>  `Lic.¦Jur.¦Reto␣A.¦Kramer`
 
 ## Geschütztes Leerzeichen
-* Wörter mit dazugehöriger Ziffer
-> `10␣Liter`<br/> `Seite␣3`<br/> `DIN␣7000`
-* Firmennamen
-> `Grau␣AG`<br/> `Blau␣GmbH`<br/> `McKinsey␣&␣Co.`
-
-
 
 <div class="box">
 
 ### Eingabe
-####  geschütztes Leerzeichen
-(no-break space)
+####  geschütztes Leerzeichen `␣`
+no-break space
 * Text: '&nbsp;'
 * HTML: `&nbsp;`
 * Unicode DEZ: `&#160;`
@@ -203,20 +205,39 @@ Je nach Anwendung müssen andere Leerzeichen zum Einsatz kommen.
 
 </div>
 
+### Wörter mit dazugehöriger Ziffer
+> 10&nbsp;Liter <br/> `10␣Liter`
+
+> Seite&nbsp;3 <br/> `Seite␣3`
+
+> DIN&nbsp;7000 <br/> `DIN␣7000`
+### Firmennamen
+> Grau&nbsp;AG <br/> `Grau␣AG`
+
+> Blau&nbsp;GmbH <br/> `Blau␣GmbH`
+
+> McKinsey&nbsp;&amp;&nbsp;Co. <br/> `McKinsey␣&␣Co.`
+
+
+
+
 ## Ziffer-Leerzeichen
-Gleiche Breite wie eine Tabellenziffer.
-> 0&#8199;0<br>000
 
 
 <div class="box">
 
 ### Eingabe
 ####  Ziffer-Leerzeichen
-(figure space)
+figure space
 * Text: '&#8199;'
 * Unicode DEZ: `&#8199;`
 * Unicode HEX: `&#x2007;`
 </div>
+
+
+### Tabellendarstellung
+Gleiche Breite wie eine Tabellenziffer.
+> 0&#8199;0<br>000
 
 
 

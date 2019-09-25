@@ -6,27 +6,14 @@ description: Typografische Striche
 # Typografische Striche
 
 
-## Anwendung
 
-### Verwendung Divis (-)
-* Kuppeln von Wörtern
+## Divis (-)
+### Kuppeln von Wörtern
 > Online-Speicher
-* Trennen von Wörtern beim Zeilenende
+### Trennen von Wörtern beim Zeilenende
 > Typo-<br>grafie
 
-### Verwendung Halbgeviertstrich (–)
-* Eingeschobene Sätze & Gedankenstriche
-> Er ging – so glaubten wir – heim.
-* Bei örtlicher oder numerischer Verbindung (Bis-Strich)
-> die Strecke `Olten¦–¦Zürich` (Olten – Zürich)
-> `14¦–¦16␣Uhr` (14 – 16 Uhr)
-* Als Zeichen für Aufzählungen
-> – Hallo <br>– Welt
-
-### Verwendung Minus (&minus;)
-* In mathematischer Notation
-> 1 + 2 &minus; 3 = 0
-
+## Halbgeviertstrich (–)
 
 <div class="box">
 
@@ -43,6 +30,21 @@ description: Typografische Striche
 
 </div>
 
+### Eingeschobene Sätze & Gedankenstriche
+> Er ging – so glaubten wir – heim.
+
+### Bei örtlicher Verbindung (Bis-Strich)
+> die Strecke Olten – Zürich <br> `Olten¦–¦Zürich`
+
+### Bei numerischer Verbindung (Bis-Strich)
+> 14 – 16 Uhr <br> `14¦–¦16␣Uhr`
+
+### Als Zeichen für Aufzählungen
+> – Hallo <br>– Welt
+
+## Minus (&minus;)
+### In mathematischer Notation
+> 1 + 2 &minus; 3 = 0
 
 ## Divis oder Minus
 Unicode unterscheidet zwischen Divis oder Minus:
