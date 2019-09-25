@@ -22,6 +22,8 @@ Ziffern ab fünf stellen werden immer in Dreiergruppen (von rechts) formatiert.
 
 * Nicht
 > ~~`2¦000` (2&#8239;000)~~
+> ~~`20'000` (20'000)~~
+> ~~`20.000` (20.000)~~
 
 
 ## Gleichungen
@@ -31,12 +33,16 @@ Ziffern ab fünf stellen werden immer in Dreiergruppen (von rechts) formatiert.
 > `1¦–¦2␣=␣−1` (1&#8239;–&#8239;2 = –1)
 
 
+## Bankkonten
+Die Internationalen Bankkontonummern (IBAN) bestehen aus maximal 34 Zeichen (ISO 13616-1:2007 Teil 1). Die typografische Schreibweise ist für den Menschen einfacher zu erfassen und trennt von links immer in Gruppen zu vier Zeichen auf (siehe auch DIN 5008).
+
+> `CH11¦8888¦8000¦0000¦0000¦0` (CH11&#8239;8888&#8239;8000&#8239;0000&#8239;0000&#8239;0)
 
 ## Quellen & Infos
 
 <div class="box">
 
 ### Links
-* [Wikipedia Dezimaltrennzeichen](https://de.wikipedia.org/wiki/Schreibweise_von_Zahlen#Schweiz_und_Liechtenstein)
-
+* [Wikipedia · Dezimaltrennzeichen](https://de.wikipedia.org/wiki/Schreibweise_von_Zahlen#Schweiz_und_Liechtenstein)
+* [Wikipedia · Internationale Bankkontonummer](https://de.wikipedia.org/wiki/Internationale_Bankkontonummer)
 </div>
