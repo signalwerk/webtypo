@@ -13,122 +13,48 @@ description: Leerzeichen
 ## Leerzeichen
 Je nach Anwendung müssen andere Leerzeichen zum Einsatz kommen.
 
-<style>
-  ul.spaces  {
-    list-style-type: none;
-    <!-- font-size: 2rem; -->
-    margin: 0;
-    padding: 0;
-  }
 
-  ul.spaces > li::before {
-    display: none;
-  }
-  ul.spaces li {
-    margin-bottom: 1rem;
-  }
-  .spaces .show {
-    white-space: pre;
-    background-color: var(--green-color);
-  }
+<style>
+
   .spaces .example {
-    width: 7rem;
-    display: inline-block;
+    white-space: pre;
     font-size: 2rem;
   }
-  .spaces .pre {
-    display: inline-block;
+
+  .spaces .space {
+    background-color: var(--blue-color);
+  }
+
+  .spaces .filler--prefix {
     width: 2rem;
+    display: inline-block;
     text-align: right;
   }
-  .spaces .bg {
+  .spaces .example--gray .filler-char {
     background-color: var(--gray-color);
   }
+
 </style>
 
+<div class="spaces">
 
+| Beispiel | Text | HTML · Entitätenreferenz | HTML · dezimal | HTML · hexadezimal | Unicode Name |
+|----|----|----|----|----|----|
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8203;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8203;' | `&ZeroWidthSpace;` | `&#8203;` | `&#x200B;` | ZERO WIDTH SPACE |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#32;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#32;' | | `&#32;` | `&#x0020;` | SPACE |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#160;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#160;' | `&nbsp;` | `&#160;` | `&#x00A0;` | NO-BREAK SPACE |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8201;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8201;' | `&thinsp;` | `&#8201;` | `&#x2009;` | THIN SPACE |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8239;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8239;' | | `&#8239;` | `&#x202F;` | NARROW NO-BREAK SPACE |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8202;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8202;' | `&hairsp;` | `&#8202;` | `&#x200A;` | HAIR SPACE |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8198;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8198;' | | `&#8198;` | `&#x2006;` | SIX-PER-EM SPACE |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8197;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8197;' | `&emsp14;` | `&#8197;` | `&#x2005;` | FOUR-PER-EM SPACE |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8196;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8196;' | `&emsp13;` | `&#8196;` | `&#x2004;` | THREE-PER-EM SPACE |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8194;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8194;' | `&ensp;` | `&#8194;` | `&#x2002;` | EN SPACE |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8195;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8195;' | `&emsp;` | `&#8195;` | `&#x2003;` | EM SPACE |
+| <span class="example example--gray"><span class="filler filler--prefix"><span class="filler-char">0</span></span><span class="space">&#8199;</span><span class="filler-char"><span class="filler filler--postfix">0</span></span></span> | '&#8199;' | `&numsp;` | `&#8199;` | `&#x2007;` | FIGURE SPACE |
+| <span class="example example--gray"><span class="filler filler--prefix"><span class="filler-char">.</span></span><span class="space">&#8200;</span><span class="filler-char"><span class="filler filler--postfix">.</span></span></span> | '&#8200;' | `&puncsp;` | `&#8200;` | `&#x2008;` | PUNCTUATION SPACE |
 
-
-<ul class="spaces">
-  <li>
-    <span class="example"><span class="pre">M</span><!--
- --><span class="show"></span><!--
- --><span class="after">M</span>
- </span><code>No space</code>
-  </li>
-  <li>
-    <span class="example"><span class="pre">M</span><!--
- --><span class="show">&#32;</span><!--
- --><span class="after">M</span>
- </span><code>Space – U+0020</code>
-  </li>
-  <li>
-    <span class="example"><span class="pre">M</span><!--
- --><span class="show">&#160;</span><!--
- --><span class="after">M</span>
- </span><code>No-break Space – U+00A0</code>
-  </li>
-  <li>
-    <span class="example"><span class="pre">M</span><!--
- --><span class="show">&#8201;</span><!--
- --><span class="after">M</span>
- </span><code>Thin Space – U+2009</code>
-  </li>
-  <li>
-    <span class="example"><span class="pre">M</span><!--
- --><span class="show">&#8239;</span><!--
- --><span class="after">M</span>
- </span><code>Narrow No-break Space – U+202F</code>
-  </li>
-  <li>
-    <span class="example"><span class="pre">M</span><!--
- --><span class="show">&#8202;</span><!--
- --><span class="after">M</span>
- </span><code>Hair Space – U+200A</code>
-  </li>
-  <li>
-    <span class="example"><span class="pre">M</span><!--
- --><span class="show">&#8198;</span><!--
- --><span class="after">M</span>
- </span><code>Six-Per-Em Space – U+2006</code>
-  </li>
-  <li>
-    <span class="example"><span class="pre">M</span><!--
- --><span class="show">&#8197;</span><!--
- --><span class="after">M</span>
- </span><code>Four-Per-Em Space – U+2005</code>
-  </li>
-  <li>
-    <span class="example"><span class="pre">M</span><!--
- --><span class="show">&#8196;</span><!--
- --><span class="after">M</span>
- </span><code>Three-Per-Em Space – U+2004</code>
-  </li>
-  <li>
-    <span class="example"><span class="pre">M</span><!--
- --><span class="show">&#8194;</span><!--
- --><span class="after">M</span>
- </span><code>En Space – U+2002</code>
-  </li>
-  <li>
-    <span class="example"><span class="pre">M</span><!--
- --><span class="show">&#8195;</span><!--
- --><span class="after">M</span>
- </span><code>Em Space – U+2003</code>
-  </li>
-  <li>
-    <span class="example"><span class="pre"><span class="bg">0</span></span><!--
- --><span class="show">&#8199;</span><!--
- --><span class="after"><span class="bg">0</span></span>
- </span><code>Figure Space – U+2007</code>
-  </li>
-  <li>
-    <span class="example"><span class="pre"><span class="bg">.</span></span><!--
- --><span class="show">&#8200;</span><!--
- --><span class="after"><span class="bg">.</span></span>
- </span><code>Punctuation Space – U+2008 </code>
-  </li>
-</ul>
+</div>
 
 
 
