@@ -16,8 +16,30 @@ Je nach Anwendung müssen andere Leerzeichen zum Einsatz kommen.
 
 <style>
 
-  .spaces .example {
+  .spaces {
+    font-size: .8rem;
+  }
+
+  .spaces thead {
+    font-size: .9rem;
+  }
+
+  .spaces .name-german {
+    font-size: .9rem;
+    font-weight: 700;
+  }
+
+  .spaces .name-unicode {
+    letter-spacing: 0.04em;
+  }
+
+  .spaces td {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     white-space: pre;
+  }
+
+  .spaces .example {
     font-size: 2rem;
   }
 
@@ -36,23 +58,29 @@ Je nach Anwendung müssen andere Leerzeichen zum Einsatz kommen.
 
 </style>
 
-<div class="spaces">
+<div class="spaces svg-export" data-svg-name="spaces.svg">
 
-| Beispiel | Text | HTML · Entitätenreferenz | HTML · dezimal | HTML · hexadezimal | Unicode Name |
-|----|----|----|----|----|----|
-| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8203;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8203;' | `&ZeroWidthSpace;` | `&#8203;` | `&#x200B;` | ZERO WIDTH SPACE |
-| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#32;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#32;' | | `&#32;` | `&#x0020;` | SPACE |
-| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#160;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#160;' | `&nbsp;` | `&#160;` | `&#x00A0;` | NO-BREAK SPACE |
-| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8201;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8201;' | `&thinsp;` | `&#8201;` | `&#x2009;` | THIN SPACE |
-| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8239;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8239;' | | `&#8239;` | `&#x202F;` | NARROW NO-BREAK SPACE |
-| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8202;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8202;' | `&hairsp;` | `&#8202;` | `&#x200A;` | HAIR SPACE |
-| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8198;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8198;' | | `&#8198;` | `&#x2006;` | SIX-PER-EM SPACE |
-| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8197;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8197;' | `&emsp14;` | `&#8197;` | `&#x2005;` | FOUR-PER-EM SPACE |
-| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8196;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8196;' | `&emsp13;` | `&#8196;` | `&#x2004;` | THREE-PER-EM SPACE |
-| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8194;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8194;' | `&ensp;` | `&#8194;` | `&#x2002;` | EN SPACE |
-| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8195;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | '&#8195;' | `&emsp;` | `&#8195;` | `&#x2003;` | EM SPACE |
-| <span class="example example--gray"><span class="filler filler--prefix"><span class="filler-char">0</span></span><span class="space">&#8199;</span><span class="filler-char"><span class="filler filler--postfix">0</span></span></span> | '&#8199;' | `&numsp;` | `&#8199;` | `&#x2007;` | FIGURE SPACE |
-| <span class="example example--gray"><span class="filler filler--prefix"><span class="filler-char">.</span></span><span class="space">&#8200;</span><span class="filler-char"><span class="filler filler--postfix">.</span></span></span> | '&#8200;' | `&puncsp;` | `&#8200;` | `&#x2008;` | PUNCTUATION SPACE |
+
+
+| Beispiel | Name | HTML |
+|----|----|----|
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8203;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">Breitenloses Leerzeichen</span><br/><span class="name-unicode">ZERO WIDTH SPACE</span> | Entitätenreferenz: `&ZeroWidthSpace;`<br/>Dezimal: `&#8203;`<br/>hexadezimal: `&#x200B;` |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#32;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">Leerzeichen</span><br/><span class="name-unicode">SPACE</span> | Dezimal: `&#32;`<br/>hexadezimal: `&#x0020;` |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#160;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">Leerzeichen ohne Umbruch</span><br/><span class="name-unicode">NO-BREAK SPACE</span> | Entitätenreferenz: `&nbsp;`<br/>Dezimal: `&#160;`<br/>hexadezimal: `&#x00A0;` |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8201;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">schmales Leerzeichen</span><br/><span class="name-unicode">THIN SPACE</span> | Entitätenreferenz: `&thinsp;`<br/>Dezimal: `&#8201;`<br/>hexadezimal: `&#x2009;` |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8239;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">schmales umbruchgeschütztes Leerzeichen</span><br/><span class="name-unicode">NARROW NO-BREAK SPACE</span> | Dezimal: `&#8239;`<br/>hexadezimal: `&#x202F;` |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8202;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">Haarspatium</span><br/><span class="name-unicode">HAIR SPACE</span> | Entitätenreferenz: `&hairsp;`<br/>Dezimal: `&#8202;`<br/>hexadezimal: `&#x200A;` |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8198;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">Sechstelgeviert-Leerzeichen</span><br/><span class="name-unicode">SIX-PER-EM SPACE</span> | Dezimal: `&#8198;`<br/>hexadezimal: `&#x2006;` |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8197;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">Viertelgeviert-Leerzeichen</span><br/><span class="name-unicode">FOUR-PER-EM SPACE</span> | Entitätenreferenz: `&emsp14;`<br/>Dezimal: `&#8197;`<br/>hexadezimal: `&#x2005;` |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8196;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">Drittelgeviert-Leerzeichen</span><br/><span class="name-unicode">THREE-PER-EM SPACE</span> | Entitätenreferenz: `&emsp13;`<br/>Dezimal: `&#8196;`<br/>hexadezimal: `&#x2004;` |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8194;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">Halbgeviert-Leerzeichen</span><br/><span class="name-unicode">EN SPACE</span> | Entitätenreferenz: `&ensp;`<br/>Dezimal: `&#8194;`<br/>hexadezimal: `&#x2002;` |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8195;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">Geviert-Leerzeichen</span><br/><span class="name-unicode">EM SPACE</span> | Entitätenreferenz: `&emsp;`<br/>Dezimal: `&#8195;`<br/>hexadezimal: `&#x2003;` |
+| <span class="example example--gray"><span class="filler filler--prefix"><span class="filler-char">0</span></span><span class="space">&#8199;</span><span class="filler-char"><span class="filler filler--postfix">0</span></span></span> | <span class="name-german">Ziffernleerzeichen</span><br/><span class="name-unicode">FIGURE SPACE</span> | Entitätenreferenz: `&numsp;`<br/>Dezimal: `&#8199;`<br/>hexadezimal: `&#x2007;` |
+| <span class="example example--gray"><span class="filler filler--prefix"><span class="filler-char">.</span></span><span class="space">&#8200;</span><span class="filler-char"><span class="filler filler--postfix">.</span></span></span> | <span class="name-german">Interpunktionsleerzeichen</span><br/><span class="name-unicode">PUNCTUATION SPACE</span> | Entitätenreferenz: `&puncsp;`<br/>Dezimal: `&#8200;`<br/>hexadezimal: `&#x2008;` |
+
+
+
+
 
 </div>
 
@@ -173,5 +201,6 @@ Gleiche Breite wie eine Tabellenziffer.
 
 ### Links
 * [Wikipedia – Whitespace character](https://en.wikipedia.org/wiki/Whitespace_character)
+* [typografie.info – Leerzeichen in Unicode – Deutsche Namen?](https://www.typografie.info/3/topic/24914-leerzeichen-in-unicode-%E2%80%93%C2%A0deutsche-namen/)
 
 </div>
