@@ -36,6 +36,17 @@
 
 
 
+/* fira-code-regular - latin */
+@font-face {
+  font-family: 'WebTypo-Code';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./components/assets/fonts/fira-code-v5-latin/fira-code-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./components/assets/fonts/fira-code-v5-latin/fira-code-v5-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
 /*
 FIGURE_SPACE set from Glyph 'DIGIT ZERO' (U+0030)
 NARROW_NO_BREAK_SPACE set from Glyph 'THIN SPACE' (U+2009)

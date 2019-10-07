@@ -10,3 +10,10 @@
     padding: 1.3rem 0;
   }
 }
+
+
+@media print {
+ .navigation {
+   display: none;
+ }
+}
