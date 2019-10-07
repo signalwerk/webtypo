@@ -3,6 +3,7 @@ table {
   border-collapse: collapse;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-size: inherit;
 }
 
 th {

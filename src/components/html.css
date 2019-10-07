@@ -1,7 +1,7 @@
 @import "./breakpoints-var";
 html {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "webtypo-signalwerk-filler", "webtypo-signalwerk", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
