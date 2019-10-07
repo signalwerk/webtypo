@@ -74,7 +74,7 @@
 <h3 id="blauspanspangmbh">Blau<span>&nbsp;</span>GmbH</h3>
 <p><code>Blau</code><code class="space">&amp;nbsp;</code><code>GmbH</code></p>
 <h3 id="turingspanspanspanspanco">Turing<span>&nbsp;</span>&amp;<span>&nbsp;</span>Co.</h3>
-<p><code>Turing</code><code class="space">&amp;nbsp;</code><code>&amp;</code><code class="space">&amp;nbsp;</code><code>Co.</code></p>
+<p><code>Turing</code><code class="space">&amp;nbsp;</code><code>&amp;amp;</code><code class="space">&amp;nbsp;</code><code>Co.</code></p>
 </div>
 
 <h2 id="schmales-leerzeichen">Schmales Leerzeichen</h2>
@@ -130,7 +130,7 @@
 
 <h4 id="alignierende-ziffern">Alignierende Ziffern</h4>
 <h3 id="100brspanspan50">100<br/><span>&numsp;</span>50</h3>
-<p><code>100¶</code><code class="space">&amp;numsp;</code><code>50</code></p>
+<p><code>100&lt;br/&gt;</code><code class="space">&amp;numsp;</code><code>50</code></p>
 </div>
 
 <h2 id="browser-und-fonts">Browser und Fonts</h2>
@@ -345,10 +345,10 @@ color: var(--green-color);
   text-transform: uppercase;
 }
   .example-big h3 {
-    font-size: 2rem;
+    font-size: 2.4rem;
 
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 0.6em;
+    margin-bottom: 0.3em;
     line-height: 1;
   }
 
@@ -363,12 +363,18 @@ color: var(--green-color);
   .example-big :not(pre) > code {
     font-size: 1rem;
     white-space: pre;
-background-color: white;
+background-color: transparent;
 position: relative;
 z-index: 9;
 
+padding: 0;
   }
 
+.example-big > p > code:first-child:before {
+  content: "HTML:";
+  letter-spacing: 0.04em;
+  margin-right: 0.4em;
+}
   .example-big h3 span {
     background-color: var(--blue-color);
   }
@@ -376,12 +382,12 @@ z-index: 9;
 
 
   .example-big code.space {
-    background-color: var(--blue-color);
-    color: white;
+    color: var(--blue-color);
+    <!-- color: white; -->
 
 
-    margin-left: -0.2rem;
-margin-right: -0.2rem;
+    padding: .2em .4em;
+
 z-index: 99;
   }
 
