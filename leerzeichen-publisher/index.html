@@ -1,0 +1,408 @@
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Leerzeichen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Leerzeichen" />
+    <link
+      rel="stylesheet"
+      href="./../styles/main.critical.css"
+      media="all"
+    />
+    <link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="./../styles/main.rest.css"
+      media="all"
+    />
+    <script src="./../index.js"></script>
+  </head>
+  <body>
+     <div class="navigation"><div class="navigation__content"><a href="./..">Home</a></div></div> 
+    <article class="content"><h2 id="publisher-5-·-2019">Publisher 5 · 2019</h2>
+<p>Erscheinungsdatum · 14. 10. 2019</p>
+<hr class="thick"  />
+
+<h2 id="lizenzen">Lizenzen</h2>
+<p>Dieser Text ist von Stefan Huber unter der Lizenz <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> veröffentlicht. <a href="https://publisher.ch/">Publisher</a> erhält das Recht die Inhalte ohne Copyleft (Share Alike) zu publizieren.</p>
+<!--
+<hr class="thick"  />
+[CMYK Bilder für Print (pdf)](./frontend-frameworks_graphics_cmyk.pdf)
+ -->
+
+<hr class="thick"  />
+
+
+<h1 id="mikrotypografie-im-web--leerzeichen">Mikrotypografie im Web – Leerzeichen</h1>
+<lead>
+
+<p>Die Zeichensetzung wird im Umfeld der Schweizer Typografie oft sorgsam und gekonnt eingesetzt. Während sich die Fachleute für Druckgrafik oftmals vertieft mit der Erscheinung und Technik in der Mikrotypografie auseinander gesetzt haben, gibt es im Web nicht immer die selbe Sorgfalt. Insbesondere Leerzeichen sind nicht immer gnaz einfach zu setzen…</p>
+</lead>
+
+<h2 id="welches-bloss">Welches bloss?</h2>
+<p>Abhängig vom Kontext und Text müssen ganz verschiedene Leerzeichen verwendet werden. Obwohl die Leihen nicht auf Anhieb den Unterschied erkennen mögen, sollte beim «gepflegten Satz» doch darauf geachtet werden, dass sich eine professionelle Gestaltung auch bis in die Mikrotypografie und Zeichensetzung fortführt.</p>
+<h2 id="wie-eingeben">Wie eingeben?</h2>
+<p>Üblicherweise werden Websites heute über CMS (Content Management Systems) mit Inhalt befüllt. Da sich fast alle modernen Systeme an den Unicode-Zeichensatz (UTF-8) halten, können auch typografisch korrekte Zeichen eingegeben werden. Da diverse Zeichen nicht einfach über die Tastatur zugänglich sind, empfiehlt es sich ein Snippets-Manager oder ein sonstiges Helfer-Programm zum abrufen von Textbausteinen zu benutzen. Alternativ kann natürlich auch die Zwischenablage bemüht werden. Wenn das CMS eine Eingabe als HTML erlaubt, so kann auch eine Entitätenreferenz (siehe Tabelle) oder der hex-/deximale Code eingegeben werden. Dies hat erst noch den Vorteil, dass man auch später besser sieht, welches Zeichen eingegeben wurde, da es oftmals schwierig ist in kleinen Schriftgrössen zu erkennen, welche breite das Zeichen nun hat.</p>
+<h2 id="breitenloses-leerzeichen">Breitenloses Leerzeichen</h2>
+<p>Das breitenlose Leerzeichen gehört <a href="http://unicode.org/notes/tn27/">offiziell</a> nicht einmal zu den Leerzeichen. Es kann innerhalb von Wörtern gesetzt werden um dem Browser anzuzeigen, dass es sich um eine Trennstelle handelt (ähnlich der bedingten Trennung), diese jedoch nicht mit einem Trennstrich angezeigt werden soll.</p>
+<div class="example-big">
+
+<h4 id="wörter-trennen--ohne-trennstrich">Wörter trennen – ohne Trennstrich</h4>
+<h3 id="dieneuebrtypografiech">DieNeue<br/>Typografie.ch</h3>
+<p><code>DieNeue</code><code class="space">&amp;ZeroWidthSpace;</code><code>Typografie.ch</code></p>
+</div>
+
+<h2 id="leerzeichen-ohne-umbruch">Leerzeichen ohne Umbruch</h2>
+<p>Immer wenn man sprachliche Einheiten nicht trennen möchte, kann man diese mit einem umbruchgeschützten Leerzeichen verbinden.</p>
+<div class="example-big">
+
+<h4 id="wörter-mit-dazugehöriger-ziffer">Wörter mit dazugehöriger Ziffer</h4>
+<h3 id="seitespanspan3">Seite<span>&nbsp;</span>3</h3>
+<p><code>Seite</code><code class="space">&amp;nbsp;</code><code>3</code></p>
+<h3 id="10spanspanliter">10<span>&nbsp;</span>Liter</h3>
+<p><code>10</code><code class="space">&amp;nbsp;</code><code>Liter</code></p>
+<h3 id="dinspanspan9000">DIN<span>&nbsp;</span>9000</h3>
+<p><code>DIN</code><code class="space">&amp;nbsp;</code><code>9000</code></p>
+</div>
+
+
+
+<div class="example-big">
+
+<h4 id="firmennamen">Firmennamen</h4>
+<h3 id="grauspanspanag">Grau<span>&nbsp;</span>AG</h3>
+<p><code>Grau</code><code class="space">&amp;nbsp;</code><code>AG</code></p>
+<h3 id="blauspanspangmbh">Blau<span>&nbsp;</span>GmbH</h3>
+<p><code>Blau</code><code class="space">&amp;nbsp;</code><code>GmbH</code></p>
+<h3 id="turingspanspanspanspanco">Turing<span>&nbsp;</span>&amp;<span>&nbsp;</span>Co.</h3>
+<p><code>Turing</code><code class="space">&amp;nbsp;</code><code>&amp;</code><code class="space">&amp;nbsp;</code><code>Co.</code></p>
+</div>
+
+<h2 id="schmales-leerzeichen">Schmales Leerzeichen</h2>
+<p>Das schmales Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist empfiehlt es sich die variante zu nehmen, welche gleichzeitig auch keinen Umbruch zulässt. Auch geschütztes schmales Leerzeichen genannt.</p>
+<div class="example-big">
+
+<h4 id="datum">Datum</h4>
+<h3 id="18spanspanaugust2018">18.<span>&#x202F;</span>August&nbsp;2018</h3>
+<p><code>18.</code><code class="space">&amp;#x202F;</code><code>August&nbsp;2018</code></p>
+<h3 id="18spanspan8spanspan2018">18.<span>&#x202F;</span>8.<span>&#x202F;</span>2018</h3>
+<p><code>18.</code><code class="space">&amp;#x202F;</code><code>8.</code><code class="space">&amp;#x202F;</code><code>2018</code></p>
+</div>
+
+<div class="example-big">
+
+<h4 id="masseinheiten">Masseinheiten</h4>
+<h3 id="100spanspankm">100<span>&#x202F;</span>km</h3>
+<p><code>100</code><code class="space">&amp;#x202F;</code><code>km</code></p>
+<h3 id="30spanspan°c">30<span>&#x202F;</span>°C</h3>
+<p><code>30</code><code class="space">&amp;#x202F;</code><code>°C</code></p>
+</div>
+
+<div class="example-big">
+
+<h4 id="telefonnummern">Telefonnummern</h4>
+<h3 id="41spanspan78spanspan700spanspan10spanspan10">+41<span>&#x202F;</span>78<span>&#x202F;</span>700<span>&#x202F;</span>10<span>&#x202F;</span>10</h3>
+<p><code>+41</code><code class="space">&amp;#x202F;</code><code>78</code><code class="space">&amp;#x202F;</code><code>700</code><code class="space">&amp;#x202F;</code><code>10</code><code class="space">&amp;#x202F;</code><code>10</code></p>
+</div>
+
+<div class="example-big">
+
+<h4 id="berufstitel">Berufstitel</h4>
+<h3 id="profspanspandrspanspanmoser">Prof.<span>&#x202F;</span>Dr.<span>&#x202F;</span>Moser</h3>
+<p><code>Prof.</code><code class="space">&amp;#x202F;</code><code>Dr.</code><code class="space">&amp;#x202F;</code><code>Moser</code></p>
+<h3 id="licspanspanjurspanspantinaaspanspankramer">Lic.<span>&#x202F;</span>Jur.<span>&#x202F;</span>Tina&nbsp;A.<span>&#x202F;</span>Kramer</h3>
+<p><code>Lic.</code><code class="space">&amp;#x202F;</code><code>Jur.</code><code class="space">&amp;#x202F;</code><code>Tina&amp;nbsp;A.</code><code class="space">&amp;#x202F;</code><code>Kramer</code></p>
+</div>
+
+
+<div class="example-big">
+
+<h4 id="mathematische-gleichungen">Mathematische Gleichungen</h4>
+<h3 id="1spanspanspanspan23">1<span>&#x202F;</span>+<span>&#x202F;</span>2&nbsp;=&nbsp;3</h3>
+<p><code>1</code><code class="space">&amp;#x202F;</code><code>+</code><code class="space">&amp;#x202F;</code><code>2&amp;nbsp;=&amp;nbsp;3</code></p>
+</div>
+
+
+
+
+<h2 id="ziffernleerzeichen">Ziffernleerzeichen</h2>
+<p>Ziffernleerzeichen sind mit Vorsicht zu geniessen. Sie sollten nicht dazu dienen, ganze (Zahlen-)Blöcke von Text zu formatieren. Aber es kann nützlich sein, ein Leerzeichen zu haben, was genau so breit ist, wie die proportionalen Versalziffern.</p>
+<div class="example-big">
+
+<h4 id="alignierende-ziffern">Alignierende Ziffern</h4>
+<h3 id="100brspanspan50">100<br/><span>&numsp;</span>50</h3>
+<p><code>100¶</code><code class="space">&amp;numsp;</code><code>50</code></p>
+</div>
+
+<h2 id="browser-und-fonts">Browser und Fonts</h2>
+<p>Wie jedes andere Zeichen müssen auch Leerzeichen über den Font kontrolliert werden. Leider haben nicht immer alle Schriften die benötigten Leerzeichen enthalten. Zum Beispiel ist das schmales Leerzeichen ohne Umbruch oft nicht in Fonts vorhanden, jedoch das normale schmale Leerzeichen. Um das nicht umbrechende Zeichen dennoch auf der Website benutzen zu können, kann man einen «Filler»-Font erzeugen. Dieser nimmt die breite des schmalen Leerzeichens und erzeugt einen neuen Font mit nur einem geschützten schmalen Leerzeichen, das dann nicht umbricht. So wurde weder das ursprüngliche Font-File modifiziert (kein Lizenzverstoss), noch muss man typografische Abstriche machen.</p>
+<div class="example-big">
+
+<h4 id="filler-font-br-mit-nur-einem-zeichen-im-css-laden">Filler-Font <br/> mit nur einem Zeichen im CSS laden</h4>
+<pre><code class="language-css">@font-face {
+  font-family: &#39;FontFiller&#39;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(&quot;./FontFiller.woff2&quot;) format(&quot;woff2&quot;);
+  unicode-range: U+202F;
+}</code></pre>
+</div>
+
+
+<div class="example-big">
+
+<h4 id="filler-font-im-css-nutzen">Filler-Font im CSS nutzen</h4>
+<pre><code class="language-css">html {
+  font-family: &quot;FontFiller&quot;, &quot;MyRegularFont&quot;, sans-serif;
+}</code></pre>
+</div>
+
+
+
+
+
+<h2 id="die-wichtigsten-leerzeichen">Die wichtigsten Leerzeichen</h2>
+<p>Es gibt diverse nicht druckende Zeichen im Unicode-Standard. Hier eine kleine – nicht abschliessende – Übersicht der wichtigsten Leerzeichen mit typografischer Relevanz.</p>
+<div class="spaces svg-export" data-svg-name="spaces.svg">
+
+
+
+<table>
+<thead>
+<tr>
+<th>Beispiel</th>
+<th>Name</th>
+<th>HTML</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8203;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span></td>
+<td><span class="name-german">Breitenloses Leerzeichen</span><br/><span class="name-unicode">ZERO WIDTH SPACE</span></td>
+<td>Entitätenreferenz: <code>&amp;ZeroWidthSpace;</code><br/>dezimal: <code>&amp;#8203;</code><br/>hexadezimal: <code>&amp;#x200B;</code></td>
+</tr>
+<tr>
+<td><span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#32;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span></td>
+<td><span class="name-german">Leerzeichen</span><br/><span class="name-unicode">SPACE</span></td>
+<td>Dezimal: <code>&amp;#32;</code><br/>hexadezimal: <code>&amp;#x0020;</code></td>
+</tr>
+<tr>
+<td><span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#160;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span></td>
+<td><span class="name-german">Leerzeichen ohne Umbruch</span><br/><span class="name-unicode">NO-BREAK SPACE</span></td>
+<td>Entitätenreferenz: <code>&amp;nbsp;</code><br/>dezimal: <code>&amp;#160;</code><br/>hexadezimal: <code>&amp;#x00A0;</code></td>
+</tr>
+<tr>
+<td><span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8201;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span></td>
+<td><span class="name-german">schmales Leerzeichen</span><br/><span class="name-unicode">THIN SPACE</span></td>
+<td>Entitätenreferenz: <code>&amp;thinsp;</code><br/>dezimal: <code>&amp;#8201;</code><br/>hexadezimal: <code>&amp;#x2009;</code></td>
+</tr>
+<tr>
+<td><span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8239;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span></td>
+<td><span class="name-german">schmales Leerzeichen ohne Umbruch</span><br/><span class="name-unicode">NARROW NO-BREAK SPACE</span></td>
+<td>Dezimal: <code>&amp;#8239;</code><br/>hexadezimal: <code>&amp;#x202F;</code></td>
+</tr>
+<tr>
+<td><span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8202;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span></td>
+<td><span class="name-german">Haarspatium</span><br/><span class="name-unicode">HAIR SPACE</span></td>
+<td>Entitätenreferenz: <code>&amp;hairsp;</code><br/>dezimal: <code>&amp;#8202;</code><br/>hexadezimal: <code>&amp;#x200A;</code></td>
+</tr>
+<tr>
+<td><span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8198;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span></td>
+<td><span class="name-german">Sechstelgeviert-Leerzeichen</span><br/><span class="name-unicode">SIX-PER-EM SPACE</span></td>
+<td>Dezimal: <code>&amp;#8198;</code><br/>hexadezimal: <code>&amp;#x2006;</code></td>
+</tr>
+<tr>
+<td><span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8197;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span></td>
+<td><span class="name-german">Viertelgeviert-Leerzeichen</span><br/><span class="name-unicode">FOUR-PER-EM SPACE</span></td>
+<td>Entitätenreferenz: <code>&amp;emsp14;</code><br/>dezimal: <code>&amp;#8197;</code><br/>hexadezimal: <code>&amp;#x2005;</code></td>
+</tr>
+<tr>
+<td><span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8196;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span></td>
+<td><span class="name-german">Drittelgeviert-Leerzeichen</span><br/><span class="name-unicode">THREE-PER-EM SPACE</span></td>
+<td>Entitätenreferenz: <code>&amp;emsp13;</code><br/>dezimal: <code>&amp;#8196;</code><br/>hexadezimal: <code>&amp;#x2004;</code></td>
+</tr>
+<tr>
+<td><span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8194;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span></td>
+<td><span class="name-german">Halbgeviert-Leerzeichen</span><br/><span class="name-unicode">EN SPACE</span></td>
+<td>Entitätenreferenz: <code>&amp;ensp;</code><br/>dezimal: <code>&amp;#8194;</code><br/>hexadezimal: <code>&amp;#x2002;</code></td>
+</tr>
+<tr>
+<td><span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8195;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span></td>
+<td><span class="name-german">Geviert-Leerzeichen</span><br/><span class="name-unicode">EM SPACE</span></td>
+<td>Entitätenreferenz: <code>&amp;emsp;</code><br/>dezimal: <code>&amp;#8195;</code><br/>hexadezimal: <code>&amp;#x2003;</code></td>
+</tr>
+<tr>
+<td><span class="example example--gray"><span class="filler filler--prefix"><span class="filler-char">0</span></span><span class="space">&#8199;</span><span class="filler-char"><span class="filler filler--postfix">0</span></span></span></td>
+<td><span class="name-german">Ziffernleerzeichen</span><br/><span class="name-unicode">FIGURE SPACE</span></td>
+<td>Entitätenreferenz: <code>&amp;numsp;</code><br/>dezimal: <code>&amp;#8199;</code><br/>hexadezimal: <code>&amp;#x2007;</code></td>
+</tr>
+<tr>
+<td><span class="example example--gray"><span class="filler filler--prefix"><span class="filler-char">.</span></span><span class="space">&#8200;</span><span class="filler-char"><span class="filler filler--postfix">.</span></span></span></td>
+<td><span class="name-german">Interpunktionsleerzeichen</span><br/><span class="name-unicode">PUNCTUATION SPACE</span></td>
+<td>Entitätenreferenz: <code>&amp;puncsp;</code><br/>dezimal: <code>&amp;#8200;</code><br/>hexadezimal: <code>&amp;#x2008;</code></td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+
+
+<hr class="thick"  />
+
+<h3 id="autor">Autor</h3>
+<p>Stefan Huber unterrichtet an der <a href="https://sfgz.ch/">Schule für Gestaltung Zürich</a> im Lehrgang HF Interaction Design und ist als Web-Entwickler tätig.</p>
+<hr class="thick"  />
+
+
+
+
+
+
+
+
+
+<style>
+
+
+h1,
+h2 {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+
+  .spaces {
+    font-size: .8rem;
+  }
+
+  .spaces thead {
+    font-size: .9rem;
+  }
+
+  .spaces .name-german {
+    font-size: .9rem;
+    font-weight: 700;
+  }
+
+  .spaces .name-unicode {
+    letter-spacing: 0.04em;
+  }
+
+  .spaces td {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    white-space: pre;
+  }
+
+  .spaces .example {
+    font-size: 2rem;
+  }
+
+  .spaces .space {
+    background-color: var(--blue-color);
+  }
+
+  .spaces .filler--prefix {
+    width: 2rem;
+    display: inline-block;
+    text-align: right;
+  }
+  .spaces .example--gray .filler-char {
+    background-color: var(--gray-color);
+  }
+
+  lead p {
+    font-weight: 700;
+    color: var(--green-color);
+    line-height: 1.7;
+    margin: 2rem;
+  }
+
+
+
+
+
+.example-big {
+  margin: 1rem 0;
+
+  padding-top: 0.1rem;
+    padding-right: 1em;
+    padding-bottom: 1rem;
+    padding-left: 1em;
+
+
+
+  border-left: 0.25em solid var(--green-color);
+  background-color: var(--gray-color);
+
+}
+
+.example-big h4 {
+  font-size: 1.2rem;
+
+color: var(--green-color);
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+  .example-big h3 {
+    font-size: 2rem;
+
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1;
+  }
+
+  .example-big p em {
+    font-size: 1rem;
+  }
+  .example-big pre {
+    background-color: transparent;
+    line-height: 1.2;
+
+  }
+  .example-big :not(pre) > code {
+    font-size: 1rem;
+    white-space: pre;
+background-color: white;
+position: relative;
+z-index: 9;
+
+  }
+
+  .example-big h3 span {
+    background-color: var(--blue-color);
+  }
+
+
+
+  .example-big code.space {
+    background-color: var(--blue-color);
+    color: white;
+
+
+    margin-left: -0.2rem;
+margin-right: -0.2rem;
+z-index: 99;
+  }
+
+  @media print {
+
+    .svg-export, .example-big {page-break-after: always;}
+
+  }
+
+
+.content > * {
+  display: none;
+}
+
+.content > .svg-export ,
+.content > .example-big {
+  display: block;
+}
+</style>
+</article>
+  </body>
+</html>
