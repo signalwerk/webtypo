@@ -14,10 +14,11 @@ Erscheinungsdatum · 14. 10. 2019
 ## Lizenzen
 Dieser Text ist von Stefan Huber unter der Lizenz [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) veröffentlicht. [Publisher](https://publisher.ch/) erhält das Recht die Inhalte ohne Copyleft (Share Alike) zu publizieren.
 
-<!--
+
 <hr class="thick"  />
-[CMYK Bilder für Print (pdf)](./frontend-frameworks_graphics_cmyk.pdf)
- -->
+
+[CMYK Bilder für Print (pdf)](/spaces_cmyk.pdf)
+
 
 <hr class="thick"  />
 
