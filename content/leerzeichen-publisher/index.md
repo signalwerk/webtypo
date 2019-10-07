@@ -374,7 +374,6 @@ z-index: 99;
 
     .svg-export, .example-big {page-break-after: always;}
 
-  }
 
 
 .content > * {
@@ -385,4 +384,8 @@ z-index: 99;
 .content > .example-big {
   display: block;
 }
+
+}
+
+
 </style>
