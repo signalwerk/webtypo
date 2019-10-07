@@ -82,7 +82,7 @@ Immer wenn man sprachliche Einheiten nicht trennen möchte, kann man diese mit e
 <code>Blau</code><code class="space">&amp;nbsp;</code><code>GmbH</code>
 
 ### Turing<span>&nbsp;</span>&amp;<span>&nbsp;</span>Co.
-<code>Turing</code><code class="space">&amp;nbsp;</code><code>&amp;</code><code class="space">&amp;nbsp;</code><code>Co.</code>
+<code>Turing</code><code class="space">&amp;nbsp;</code><code>&amp;amp;</code><code class="space">&amp;nbsp;</code><code>Co.</code>
 
 </div>
 
@@ -156,7 +156,7 @@ Ziffernleerzeichen sind mit Vorsicht zu geniessen. Sie sollten nicht dazu dienen
 #### Alignierende Ziffern
 
 ### 100<br/><span>&numsp;</span>50
-<code>100¶</code><code class="space">&amp;numsp;</code><code>50</code>
+<code>100&lt;br/&gt;</code><code class="space">&amp;numsp;</code><code>50</code>
 
 </div>
 
@@ -331,10 +331,10 @@ color: var(--green-color);
   text-transform: uppercase;
 }
   .example-big h3 {
-    font-size: 2rem;
+    font-size: 2.4rem;
 
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 0.6em;
+    margin-bottom: 0.3em;
     line-height: 1;
   }
 
@@ -349,12 +349,18 @@ color: var(--green-color);
   .example-big :not(pre) > code {
     font-size: 1rem;
     white-space: pre;
-background-color: white;
+background-color: transparent;
 position: relative;
 z-index: 9;
 
+padding: 0;
   }
 
+.example-big > p > code:first-child:before {
+  content: "HTML:";
+  letter-spacing: 0.04em;
+  margin-right: 0.4em;
+}
   .example-big h3 span {
     background-color: var(--blue-color);
   }
@@ -362,12 +368,12 @@ z-index: 9;
 
 
   .example-big code.space {
-    background-color: var(--blue-color);
-    color: white;
+    color: var(--blue-color);
+    <!-- color: white; -->
 
 
-    margin-left: -0.2rem;
-margin-right: -0.2rem;
+    padding: .2em .4em;
+
 z-index: 99;
   }
 

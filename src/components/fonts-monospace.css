@@ -1,0 +1,29 @@
+/* ibm-plex-mono-regular - latin */
+/* @font-face {
+  font-family: 'WebTypo-Code';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./components/assets/fonts/ibm-plex-mono-v5-latin/ibm-plex-mono-v5-latin-regular.woff2') format('woff2'),
+       url('./components/assets/fonts/ibm-plex-mono-v5-latin/ibm-plex-mono-v5-latin-regular.woff') format('woff');
+} */
+
+/* ibm-plex-mono-500 - latin */
+@font-face {
+  font-family: "WebTypo-Code";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./components/assets/fonts/ibm-plex-mono-v5-latin/ibm-plex-mono-v5-latin-500.woff2")
+      format("woff2"),
+    url("./components/assets/fonts/ibm-plex-mono-v5-latin/ibm-plex-mono-v5-latin-500.woff")
+      format("woff");
+}
+
+/* ibm-plex-mono-700 - latin */
+/* @font-face {
+  font-family: 'WebTypo-Code';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./components/assets/fonts/ibm-plex-mono-v5-latin/ibm-plex-mono-v5-latin-700.woff2') format('woff2'),
+       url('./components/assets/fonts/ibm-plex-mono-v5-latin/ibm-plex-mono-v5-latin-700.woff') format('woff');
+}
+ */

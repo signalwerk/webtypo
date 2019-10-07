@@ -3,6 +3,7 @@
 
 /* basics */
 @import "./components/fonts";
+@import "./components/fonts-monospace";
 @import "./components/html";
 @import "./components/body";
 @import "./components/code";

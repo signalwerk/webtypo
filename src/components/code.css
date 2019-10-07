@@ -1,18 +1,19 @@
 /* thx github */
 :not(pre) > code {
-    padding: .2em .4em;
-    margin: 0;
-    font-size: 85%;
-    background-color:  var(--gray-color);
-    border-radius: 3px;
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: var(--gray-color);
+  border-radius: 3px;
 }
 
 pre {
-  padding: .2em .4em;
-  background-color:  var(--gray-color);
+  padding: 0.2em 0.4em;
+  background-color: var(--gray-color);
 }
 
-pre, code {
-  font-family: 'WebTypo-Code';
-
+pre,
+code {
+  font-family: "WebTypo-Code";
+  font-weight: 500;
 }
