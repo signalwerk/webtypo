@@ -29,19 +29,19 @@ Dieser Text ist von Stefan Huber unter der Lizenz [CC-BY-SA 4.0](https://creativ
 
 <lead>
 
-Die Zeichensetzung wird im Umfeld der Schweizer Typografie oft sorgsam und gekonnt eingesetzt. Während sich die Fachleute für Druckgrafik oftmals vertieft mit der Erscheinung und Technik in der Mikrotypografie auseinander gesetzt haben, gibt es im Web nicht immer die selbe Sorgfalt. Insbesondere Leerzeichen sind nicht immer gnaz einfach zu setzen…
+Die Zeichensetzung wird im Umfeld der Schweizer Typografie oft sorgsam und gekonnt eingesetzt. Während sich die Fachleute für Druckgrafik oftmals vertieft mit der Erscheinung und Technik in der Mikrotypografie auseinandergesetzt haben, herrscht im Web nicht immer dieselbe Sorgfalt. Insbesondere Leerzeichen sind nicht immer ganz einfach zu setzen …
 
 </lead>
 
 ## Welches bloss?
-Abhängig vom Kontext und Text müssen ganz verschiedene Leerzeichen verwendet werden. Obwohl die Leihen nicht auf Anhieb den Unterschied erkennen mögen, sollte beim «gepflegten Satz» doch darauf geachtet werden, dass sich eine professionelle Gestaltung auch bis in die Mikrotypografie und Zeichensetzung fortführt.
+Abhängig von Kontext und Text müssen ganz verschiedene Leerzeichen verwendet werden. Obwohl die Laien nicht auf Anhieb den Unterschied erkennen mögen, sollte beim «gepflegten Satz» doch darauf geachtet werden, dass sich eine professionelle Gestaltung auch bis in die Mikrotypografie und die Zeichensetzung fortführt.
 
 ## Wie eingeben?
-Üblicherweise werden Websites heute über CMS (Content Management Systems) mit Inhalt befüllt. Da sich fast alle modernen Systeme an den Unicode-Zeichensatz (UTF-8) halten, können auch typografisch korrekte Zeichen eingegeben werden. Da diverse Zeichen nicht einfach über die Tastatur zugänglich sind, empfiehlt es sich ein Snippets-Manager oder ein sonstiges Helfer-Programm zum abrufen von Textbausteinen zu benutzen. Alternativ kann natürlich auch die Zwischenablage bemüht werden. Wenn das CMS eine Eingabe als HTML erlaubt, so kann auch eine Entitätenreferenz (siehe Tabelle) oder der hex-/deximale Code eingegeben werden. Dies hat erst noch den Vorteil, dass man auch später besser sieht, welches Zeichen eingegeben wurde, da es oftmals schwierig ist in kleinen Schriftgrössen zu erkennen, welche breite das Zeichen nun hat.
+Üblicherweise werden Websites heute über CMS (Content Management System) mit Inhalt befüllt. Da sich fast alle modernen Systeme an den Unicode-Zeichensatz (UTF-8) halten, können auch typografisch korrekte Zeichen eingegeben werden. Da diverse Zeichen nicht einfach über die Tastatur zugänglich sind, empfiehlt es sich, ein Snippets-Manager oder ein sonstiges Helferprogramm zum Abrufen von Textbausteinen zu benutzen. Alternativ kann natürlich auch die Zwischenablage bemüht werden. Wenn das CMS eine Eingabe als HTML erlaubt, so kann auch eine Entitätenreferenz (siehe Tabelle) oder der dezimale bzw. hexadezimale Code eingegeben werden. Dies hat erst noch den Vorteil, dass man auch später besser sieht, welches Zeichen eingegeben wurde, da es oftmals schwierig ist, in kleinen Schriftgrössen zu erkennen, welche Breite das Zeichen nun hat.
 
 
 ## Breitenloses Leerzeichen
-Das breitenlose Leerzeichen gehört [offiziell](http://unicode.org/notes/tn27/) nicht einmal zu den Leerzeichen. Es kann innerhalb von Wörtern gesetzt werden um dem Browser anzuzeigen, dass es sich um eine Trennstelle handelt (ähnlich der bedingten Trennung), diese jedoch nicht mit einem Trennstrich angezeigt werden soll.
+Das breitenlose Leerzeichen gehört [offiziell](http://unicode.org/notes/tn27/) nicht einmal zu den Leerzeichen. Es kann innerhalb von Wörtern gesetzt werden, um dem Browser anzuzeigen, dass es sich um eine Trennstelle handelt (ähnlich der bedingten Trennung), diese jedoch nicht mit einem Trennstrich angezeigt werden soll.
 
 <div class="example-big">
 
@@ -52,7 +52,7 @@ Das breitenlose Leerzeichen gehört [offiziell](http://unicode.org/notes/tn27/) 
 </div>
 
 ## Leerzeichen ohne Umbruch
-Immer wenn man sprachliche Einheiten nicht trennen möchte, kann man diese mit einem umbruchgeschützten Leerzeichen verbinden.
+Immer wenn man sprachliche Einheiten nicht trennen möchte, kann man diese mit einem umbruchgeschützten Leerzeichen verbinden.
 
 <div class="example-big">
 
@@ -87,7 +87,7 @@ Immer wenn man sprachliche Einheiten nicht trennen möchte, kann man diese mit e
 </div>
 
 ## Schmales Leerzeichen
-Das schmales Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist empfiehlt es sich die variante zu nehmen, welche gleichzeitig auch keinen Umbruch zulässt. Auch geschütztes schmales Leerzeichen genannt.
+Das schmale Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist empfiehlt es sich, die Variante zu nehmen, welche gleichzeitig auch keinen Umbruch zulässt; auch geschütztes schmales Leerzeichen genannt.
 
 <div class="example-big">
 
@@ -149,7 +149,7 @@ Das schmales Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist
 
 
 ## Ziffernleerzeichen
-Ziffernleerzeichen sind mit Vorsicht zu geniessen. Sie sollten nicht dazu dienen, ganze (Zahlen-)Blöcke von Text zu formatieren. Aber es kann nützlich sein, ein Leerzeichen zu haben, was genau so breit ist, wie die proportionalen Versalziffern.
+Ziffernleerzeichen sind mit Vorsicht zu geniessen. Sie sollten nicht dazu dienen, ganze (Zahlen-)Blöcke von Text zu formatieren. Aber es kann nützlich sein, ein Leerzeichen zu haben, das genauso breit ist wie die proportionalen Versalziffern.
 
 <div class="example-big">
 
@@ -161,11 +161,11 @@ Ziffernleerzeichen sind mit Vorsicht zu geniessen. Sie sollten nicht dazu dienen
 </div>
 
 
-## Leerzeichen retlativ zum Geviert
+## Leerzeichen relativ zum Geviert
 Es gibt diverse Leerzeichen, die als Bruchteil vom Geviert definiert sind. Diese Leerzeichen können in besonderen Fällen mal zur Anwendung kommen, sind jedoch nicht im Alltagsgebrauch und daher eher unwichtig.
 
 ## Browser und Fonts
-Wie jedes andere Zeichen müssen auch Leerzeichen über den Font kontrolliert werden. Leider haben nicht immer alle Schriften die benötigten Leerzeichen enthalten. Zum Beispiel ist das schmales Leerzeichen ohne Umbruch oft nicht in Fonts vorhanden, jedoch das normale schmale Leerzeichen. Um das nicht umbrechende Zeichen dennoch auf der Website benutzen zu können, kann man einen «Filler»-Font erzeugen. Dieser nimmt die breite des schmalen Leerzeichens und erzeugt einen neuen Font mit nur einem geschützten schmalen Leerzeichen, das dann nicht umbricht. So wurde weder das ursprüngliche Font-File modifiziert (kein Lizenzverstoss), noch muss man typografische Abstriche machen.
+Wie jedes andere Zeichen müssen auch Leerzeichen über den Font kontrolliert werden. Leider enthalten nicht immer alle Schriften die benötigten Leerzeichen. Zum Beispiel ist das schmale Leerzeichen ohne Umbruch oft nicht in Fonts vorhanden, jedoch das normale schmale Leerzeichen. Um das nicht umbrechende Zeichen dennoch auf der Website benutzen zu können, kann man einen Filler-Font erzeugen. Dieser nimmt die Breite des schmalen Leerzeichens und erzeugt einen neuen Font mit nur einem geschützten schmalen Leerzeichen, das dann nicht umbricht. So wurde weder das ursprüngliche Font-File modifiziert (kein Lizenzverstoss), noch muss man typografische Abstriche machen.
 
 
 <div class="example-big">
@@ -202,7 +202,7 @@ html {
 
 
 ## Die wichtigsten Leerzeichen
-Es gibt diverse nicht druckende Zeichen im Unicode-Standard. Hier eine kleine – nicht abschliessende – Übersicht der wichtigsten Leerzeichen mit typografischer Relevanz.
+Es gibt diverse nicht druckende Zeichen im Unicode-Standard. Hier eine kleine – nicht abschliessende – Übersicht über die wichtigsten Leerzeichen mit typografischer Relevanz.
 
 <div class="spaces svg-export" data-svg-name="spaces.svg">
 
