@@ -160,6 +160,10 @@ Ziffernleerzeichen sind mit Vorsicht zu geniessen. Sie sollten nicht dazu dienen
 
 </div>
 
+
+## Leerzeichen retlativ zum Geviert
+Es gibt diverse Leerzeichen, die als Bruchteil vom Geviert definiert sind. Diese Leerzeichen können in besonderen Fällen mal zur Anwendung kommen, sind jedoch nicht im Alltagsgebrauch und daher eher unwichtig.
+
 ## Browser und Fonts
 Wie jedes andere Zeichen müssen auch Leerzeichen über den Font kontrolliert werden. Leider haben nicht immer alle Schriften die benötigten Leerzeichen enthalten. Zum Beispiel ist das schmales Leerzeichen ohne Umbruch oft nicht in Fonts vorhanden, jedoch das normale schmale Leerzeichen. Um das nicht umbrechende Zeichen dennoch auf der Website benutzen zu können, kann man einen «Filler»-Font erzeugen. Dieser nimmt die breite des schmalen Leerzeichens und erzeugt einen neuen Font mit nur einem geschützten schmalen Leerzeichen, das dann nicht umbricht. So wurde weder das ursprüngliche Font-File modifiziert (kein Lizenzverstoss), noch muss man typografische Abstriche machen.
 
