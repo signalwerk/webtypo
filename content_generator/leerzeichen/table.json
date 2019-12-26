@@ -1,0 +1,67 @@
+[
+  {
+    "hex": "200B",
+    "dec": 8203,
+    "name": "ZERO WIDTH SPACE"
+  },
+  {
+    "hex": "0020",
+    "dec": 32,
+    "name": "SPACE"
+  },
+  {
+    "hex": "00A0",
+    "dec": 160,
+    "name": "NO-BREAK SPACE"
+  },
+  {
+    "hex": "2009",
+    "dec": 8201,
+    "name": "THIN SPACE"
+  },
+  {
+    "hex": "202F",
+    "dec": 8239,
+    "name": "NARROW NO-BREAK SPACE"
+  },
+  {
+    "hex": "200A",
+    "dec": 8202,
+    "name": "HAIR SPACE"
+  },
+  {
+    "hex": "2006",
+    "dec": 8198,
+    "name": "SIX-PER-EM SPACE"
+  },
+  {
+    "hex": "2005",
+    "dec": 8197,
+    "name": "FOUR-PER-EM SPACE"
+  },
+  {
+    "hex": "2004",
+    "dec": 8196,
+    "name": "THREE-PER-EM SPACE"
+  },
+  {
+    "hex": "2002",
+    "dec": 8194,
+    "name": "EN SPACE"
+  },
+  {
+    "hex": "2003",
+    "dec": 8195,
+    "name": "EM SPACE"
+  },
+  {
+    "hex": "2007",
+    "dec": 8199,
+    "name": "FIGURE SPACE"
+  },
+  {
+    "hex": "2008",
+    "dec": 8200,
+    "name": "PUNCTUATION SPACE"
+  }
+]
