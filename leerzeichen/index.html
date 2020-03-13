@@ -44,11 +44,11 @@
 
 <h4 id="wörter-mit-dazugehöriger-ziffer">Wörter mit dazugehöriger Ziffer</h4>
 <h3 id="seitespanspan3">Seite<span>&nbsp;</span>3</h3>
-<p><code>Seite</code><code class="space">&amp;nbsp;</code><code>3</code></p>
+<p><code>Seite</code><code class="space">&ZeroWidthSpace;&amp;nbsp;</code><code>3</code></p>
 <h3 id="10spanspanliter">10<span>&nbsp;</span>Liter</h3>
-<p><code>10</code><code class="space">&amp;nbsp;</code><code>Liter</code></p>
+<p><code>10</code><code class="space">&ZeroWidthSpace;&amp;nbsp;</code><code>Liter</code></p>
 <h3 id="dinspanspan9000">DIN<span>&nbsp;</span>9000</h3>
-<p><code>DIN</code><code class="space">&amp;nbsp;</code><code>9000</code></p>
+<p><code>DIN</code><code class="space">&ZeroWidthSpace;&amp;nbsp;</code><code>9000</code></p>
 </div>
 
 
@@ -57,47 +57,53 @@
 
 <h4 id="firmennamen">Firmennamen</h4>
 <h3 id="grauspanspanag">Grau<span>&nbsp;</span>AG</h3>
-<p><code>Grau</code><code class="space">&amp;nbsp;</code><code>AG</code></p>
+<p><code>Grau</code><code class="space">&ZeroWidthSpace;&amp;nbsp;</code><code>AG</code></p>
 <h3 id="blauspanspangmbh">Blau<span>&nbsp;</span>GmbH</h3>
-<p><code>Blau</code><code class="space">&amp;nbsp;</code><code>GmbH</code></p>
+<p><code>Blau</code><code class="space">&ZeroWidthSpace;&amp;nbsp;</code><code>GmbH</code></p>
 <h3 id="turingspanspanspanspanco">Turing<span>&nbsp;</span>&amp;<span>&nbsp;</span>Co.</h3>
-<p><code>Turing</code><code class="space">&amp;nbsp;</code><code>&amp;amp;</code><code class="space">&amp;nbsp;</code><code>Co.</code></p>
+<p><code>Turing</code><code class="space">&ZeroWidthSpace;&amp;nbsp;</code><code>&amp;</code><code class="space">&ZeroWidthSpace;&amp;nbsp;</code><code>Co.</code></p>
 </div>
 
 <h2 id="schmales-leerzeichen">Schmales Leerzeichen</h2>
 <p>Das schmale Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist empfiehlt es sich, die Variante zu nehmen, welche gleichzeitig auch keinen Umbruch zulässt; auch geschütztes schmales Leerzeichen genannt.</p>
+<p>In Browser Safari gibt es seit längerem einen Bug, wodurch das geschützte schmale Leerzeichen ohne Breite dargestellt wird:</p>
+<ul>
+<li><a href="https://bugs.webkit.org/show_bug.cgi?id=172205">WebKit Bug</a></li>
+<li><a href="https://bugs.webkit.org/show_bug.cgi?id=180744">WebKit Bug</a></li>
+<li><a href="https://bugs.webkit.org/show_bug.cgi?id=194985">WebKit Bug</a></li>
+</ul>
 <div class="example-big">
 
 <h4 id="datum">Datum</h4>
 <h3 id="18spanspanaugust2018">18.<span>&#x202F;</span>August&nbsp;2018</h3>
-<p><code>18.</code><code class="space">&amp;#x202F;</code><code>August&nbsp;2018</code></p>
+<p><code>18.</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>August&nbsp;2018</code></p>
 <h3 id="18spanspan8spanspan2018">18.<span>&#x202F;</span>8.<span>&#x202F;</span>2018</h3>
-<p><code>18.</code><code class="space">&amp;#x202F;</code><code>8.</code><code class="space">&amp;#x202F;</code><code>2018</code></p>
+<p><code>18.</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>8.</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>2018</code></p>
 </div>
 
 <div class="example-big">
 
 <h4 id="masseinheiten">Masseinheiten</h4>
 <h3 id="100spanspankm">100<span>&#x202F;</span>km</h3>
-<p><code>100</code><code class="space">&amp;#x202F;</code><code>km</code></p>
+<p><code>100</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>km</code></p>
 <h3 id="30spanspan°c">30<span>&#x202F;</span>°C</h3>
-<p><code>30</code><code class="space">&amp;#x202F;</code><code>°C</code></p>
+<p><code>30</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>°C</code></p>
 </div>
 
 <div class="example-big">
 
 <h4 id="telefonnummern">Telefonnummern</h4>
 <h3 id="41spanspan78spanspan700spanspan10spanspan10">+41<span>&#x202F;</span>78<span>&#x202F;</span>700<span>&#x202F;</span>10<span>&#x202F;</span>10</h3>
-<p><code>+41</code><code class="space">&amp;#x202F;</code><code>78</code><code class="space">&amp;#x202F;</code><code>700</code><code class="space">&amp;#x202F;</code><code>10</code><code class="space">&amp;#x202F;</code><code>10</code></p>
+<p><code>+41</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>78</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>700</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>10</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>10</code></p>
 </div>
 
 <div class="example-big">
 
 <h4 id="berufstitel">Berufstitel</h4>
 <h3 id="profspanspandrspanspanmoser">Prof.<span>&#x202F;</span>Dr.<span>&#x202F;</span>Moser</h3>
-<p><code>Prof.</code><code class="space">&amp;#x202F;</code><code>Dr.</code><code class="space">&amp;#x202F;</code><code>Moser</code></p>
+<p><code>Prof.</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>Dr.</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>Moser</code></p>
 <h3 id="licspanspanjurspanspantinaaspanspankramer">Lic.<span>&#x202F;</span>Jur.<span>&#x202F;</span>Tina&nbsp;A.<span>&#x202F;</span>Kramer</h3>
-<p><code>Lic.</code><code class="space">&amp;#x202F;</code><code>Jur.</code><code class="space">&amp;#x202F;</code><code>Tina&amp;nbsp;A.</code><code class="space">&amp;#x202F;</code><code>Kramer</code></p>
+<p><code>Lic.</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>Jur.</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>Tina&nbsp;A.</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>Kramer</code></p>
 </div>
 
 
@@ -105,7 +111,7 @@
 
 <h4 id="mathematische-gleichungen">Mathematische Gleichungen</h4>
 <h3 id="1spanspanspanspan23">1<span>&#x202F;</span>+<span>&#x202F;</span>2&nbsp;=&nbsp;3</h3>
-<p><code>1</code><code class="space">&amp;#x202F;</code><code>+</code><code class="space">&amp;#x202F;</code><code>2&amp;nbsp;=&amp;nbsp;3</code></p>
+<p><code>1</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>+</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>2&nbsp;=&nbsp;3</code></p>
 </div>
 
 
@@ -114,9 +120,9 @@
 
 <h4 id="abkürzung">Abkürzung</h4>
 <h3 id="zspanspanb">z.<span>&#x202F;</span>B.</h3>
-<p><code>z.</code><code class="space">&amp;#x202F;</code><code>B.</code></p>
+<p><code>z.</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>B.</code></p>
 <h3 id="nrspanspan1">Nr.<span>&#x202F;</span>1</h3>
-<p><code>Nr.</code><code class="space">&amp;#x202F;</code><code>1</code></p>
+<p><code>Nr.</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>1</code></p>
 </div>
 
 
@@ -124,14 +130,14 @@
 
 <h4 id="zifferngruppierung">Zifferngruppierung</h4>
 <h3 id="20spanspan000">20<span>&#x202F;</span>000</h3>
-<p><code>20</code><code class="space">&amp;#x202F;</code><code>000</code></p>
+<p><code>20</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>000</code></p>
 </div>
 
 <div class="example-big">
 
 <h4 id="paragraf">Paragraf</h4>
 <h3 id="§spanspan10">§<span>&#x202F;</span>10</h3>
-<p><code>§</code><code class="space">&amp;#x202F;</code><code>10</code></p>
+<p><code>§</code><code class="space">&ZeroWidthSpace;&amp;#x202F;</code><code>10</code></p>
 </div>
 
 
@@ -153,7 +159,7 @@
 
 <h4 id="alignierende-ziffern">Alignierende Ziffern</h4>
 <h3 id="100brspanspan50">100<br/><span>&numsp;</span>50</h3>
-<p><code>100&lt;br/&gt;</code><code class="space">&amp;numsp;</code><code>50</code></p>
+<p><code>100<br/></code><code class="space">&ZeroWidthSpace;&amp;numsp;</code><code>50</code></p>
 </div>
 
 
