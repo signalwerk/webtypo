@@ -17,6 +17,10 @@ Handlebars.registerHelper("example", function(text, options) {
   let marker = options.hash.marker;
   let code = options.hash.code;
 
+  if (!marker && !code) {
+    return `### ${text}`;
+  }
+
   var search = new RegExp(escapeRegExp(marker), "g");
 
   let escapedOutput = `

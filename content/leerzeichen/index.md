@@ -37,15 +37,13 @@ Immer wenn man sprachliche Einheiten nicht trennen möchte, kann man diese mit e
 <div class="example-big">
 
 #### Wörter mit dazugehöriger Ziffer
-### Seite<span>&nbsp;</span>3
-<code>Seite</code><code class="space">&amp;nbsp;</code><code>3</code>
 
 
-### 10<span>&nbsp;</span>Liter
-<code>10</code><code class="space">&amp;nbsp;</code><code>Liter</code>
+{{example "Seite|3" marker="|" code="&nbsp;"}}
 
-### DIN<span>&nbsp;</span>9000
-<code>DIN</code><code class="space">&amp;nbsp;</code><code>9000</code>
+{{example "10|Liter" marker="|" code="&nbsp;"}}
+
+{{example "DIN|9000" marker="|" code="&nbsp;"}}
 
 </div>
 
@@ -54,30 +52,32 @@ Immer wenn man sprachliche Einheiten nicht trennen möchte, kann man diese mit e
 <div class="example-big">
 
 #### Firmennamen
-### Grau<span>&nbsp;</span>AG
-<code>Grau</code><code class="space">&amp;nbsp;</code><code>AG</code>
 
 
-### Blau<span>&nbsp;</span>GmbH
-<code>Blau</code><code class="space">&amp;nbsp;</code><code>GmbH</code>
+{{example "Grau|AG" marker="|" code="&nbsp;"}}
 
-### Turing<span>&nbsp;</span>&amp;<span>&nbsp;</span>Co.
-<code>Turing</code><code class="space">&amp;nbsp;</code><code>&amp;amp;</code><code class="space">&amp;nbsp;</code><code>Co.</code>
+{{example "Blau|GmbH" marker="|" code="&nbsp;"}}
+
+{{example "Turing|&amp;|Co." marker="|" code="&nbsp;"}}
+
 
 </div>
 
 ## Schmales Leerzeichen
 Das schmale Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist empfiehlt es sich, die Variante zu nehmen, welche gleichzeitig auch keinen Umbruch zulässt; auch geschütztes schmales Leerzeichen genannt.
 
+In Browser Safari gibt es seit längerem einen Bug, wodurch das geschützte schmale Leerzeichen ohne Breite dargestellt wird:
+* [WebKit Bug](https://bugs.webkit.org/show_bug.cgi?id=172205)
+* [WebKit Bug](https://bugs.webkit.org/show_bug.cgi?id=180744)
+* [WebKit Bug](https://bugs.webkit.org/show_bug.cgi?id=194985)
+
+
 <div class="example-big">
 
 #### Datum
-### 18.<span>&#x202F;</span>August&nbsp;2018
-<code>18.</code><code class="space">&amp;#x202F;</code><code>August&nbsp;2018</code>
+{{example "18.|August&nbsp;2018" marker="|" code="&#x202F;"}}
 
-### 18.<span>&#x202F;</span>8.<span>&#x202F;</span>2018
-
-<code>18.</code><code class="space">&amp;#x202F;</code><code>8.</code><code class="space">&amp;#x202F;</code><code>2018</code>
+{{example "18.|8.|2018" marker="|" code="&#x202F;"}}
 
 
 </div>
@@ -86,11 +86,9 @@ Das schmale Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist 
 
 #### Masseinheiten
 
-### 100<span>&#x202F;</span>km
-<code>100</code><code class="space">&amp;#x202F;</code><code>km</code>
+{{example "100|km" marker="|" code="&#x202F;"}}
 
-### 30<span>&#x202F;</span>°C
-<code>30</code><code class="space">&amp;#x202F;</code><code>°C</code>
+{{example "30|°C" marker="|" code="&#x202F;"}}
 
 </div>
 
@@ -98,8 +96,7 @@ Das schmale Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist 
 
 #### Telefonnummern
 
-### +41<span>&#x202F;</span>78<span>&#x202F;</span>700<span>&#x202F;</span>10<span>&#x202F;</span>10
-<code>+41</code><code class="space">&amp;#x202F;</code><code>78</code><code class="space">&amp;#x202F;</code><code>700</code><code class="space">&amp;#x202F;</code><code>10</code><code class="space">&amp;#x202F;</code><code>10</code>
+{{example "+41|78|700|10|10" marker="|" code="&#x202F;"}}
 
 </div>
 
@@ -107,11 +104,9 @@ Das schmale Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist 
 
 #### Berufstitel
 
-### Prof.<span>&#x202F;</span>Dr.<span>&#x202F;</span>Moser
-<code>Prof.</code><code class="space">&amp;#x202F;</code><code>Dr.</code><code class="space">&amp;#x202F;</code><code>Moser</code>
+{{example "Prof.|Dr.|Moser" marker="|" code="&#x202F;"}}
 
-### Lic.<span>&#x202F;</span>Jur.<span>&#x202F;</span>Tina&nbsp;A.<span>&#x202F;</span>Kramer
-<code>Lic.</code><code class="space">&amp;#x202F;</code><code>Jur.</code><code class="space">&amp;#x202F;</code><code>Tina&amp;nbsp;A.</code><code class="space">&amp;#x202F;</code><code>Kramer</code>
+{{example "Lic.|Jur.|Tina&nbsp;A.|Kramer" marker="|" code="&#x202F;"}}
 
 </div>
 
@@ -120,8 +115,7 @@ Das schmale Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist 
 
 #### Mathematische Gleichungen
 
-### 1<span>&#x202F;</span>+<span>&#x202F;</span>2&nbsp;=&nbsp;3
-<code>1</code><code class="space">&amp;#x202F;</code><code>+</code><code class="space">&amp;#x202F;</code><code>2&amp;nbsp;=&amp;nbsp;3</code>
+{{example "1|+|2&nbsp;=&nbsp;3" marker="|" code="&#x202F;"}}
 
 </div>
 
@@ -131,11 +125,9 @@ Das schmale Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist 
 
 #### Abkürzung
 
-### z.<span>&#x202F;</span>B.
-<code>z.</code><code class="space">&amp;#x202F;</code><code>B.</code>
+{{example "z.|B." marker="|" code="&#x202F;"}}
 
-### Nr.<span>&#x202F;</span>1
-<code>Nr.</code><code class="space">&amp;#x202F;</code><code>1</code>
+{{example "Nr.|1" marker="|" code="&#x202F;"}}
 
 
 
@@ -145,15 +137,14 @@ Das schmale Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist 
 <div class="example-big">
 
 #### Zifferngruppierung
-### 20<span>&#x202F;</span>000
-<code>20</code><code class="space">&amp;#x202F;</code><code>000</code>
+{{example "20|000" marker="|" code="&#x202F;"}}
+
 </div>
 
 <div class="example-big">
 
 #### Paragraf
-### §<span>&#x202F;</span>10
-<code>§</code><code class="space">&amp;#x202F;</code><code>10</code>
+{{example "§|10" marker="|" code="&#x202F;"}}
 
 </div>
 
@@ -164,8 +155,9 @@ Aber nicht bei Winkelgrad!
 <div class="example-big">
 
 #### Winkelgrad
-### 30°
-<code>30°</code>
+
+{{example "30°" marker="|" code="&#x202F;"}}
+
 
 </div>
 
@@ -178,8 +170,9 @@ Ziffernleerzeichen sind mit Vorsicht zu geniessen. Sie sollten nicht dazu dienen
 
 #### Alignierende Ziffern
 
-### 100<br/><span>&numsp;</span>50
-<code>100&lt;br/&gt;</code><code class="space">&amp;numsp;</code><code>50</code>
+
+{{example "100<br/>|50" marker="|" code="&numsp;"}}
+
 
 </div>
 
