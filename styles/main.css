@@ -384,6 +384,72 @@ header  {
   border-bottom: 0.1em solid white;
   padding-bottom: 0.5em;
 }
+.example-big {
+  margin: 1rem 0;
+
+  padding-top: 0.1rem;
+  padding-right: 1em;
+  padding-bottom: 1rem;
+  padding-left: 1em;
+
+  border-left: 0.25em solid #006984;
+
+  border-left: 0.25em solid var(--green-color);
+  background-color: #e6e8ea;
+  background-color: var(--gray-color);
+}
+.example-big h4 {
+  font-size: 1.2rem;
+
+  color: #006984;
+
+  color: var(--green-color);
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.example-big h3 {
+  font-size: 2.4rem;
+
+  margin-top: 0.6em;
+  margin-bottom: 0.3em;
+  line-height: 1;
+}
+.example-big p em {
+  font-size: 1rem;
+}
+.example-big pre {
+  background-color: transparent;
+  line-height: 1.2;
+}
+.example-big :not(pre) > code {
+  font-size: 1rem;
+  /* white-space: pre; */
+  white-space: normal;
+
+  background-color: transparent;
+  position: relative;
+  z-index: 9;
+
+  padding: 0;
+}
+.example-big > p > code:first-child:before {
+  content: "HTML:";
+  letter-spacing: 0.04em;
+  margin-right: 0.4em;
+}
+.example-big h3 span {
+  background-color: #0054a2;
+  background-color: var(--blue-color);
+}
+.example-big code.space {
+  color: #0054a2;
+  color: var(--blue-color);
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+
+  z-index: 99;
+}
 @media (min-width: 1000px) {
 html {
     font-size: 16px
