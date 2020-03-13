@@ -7,7 +7,7 @@ description: Typografie im Web
 
 # Typografie im Web
 
-<small>Signalwerk GmbH – Stefan Huber · 2019 · [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)</small>
+<small>Signalwerk GmbH – Stefan Huber · 2020 · [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)</small>
 
 </header>
 

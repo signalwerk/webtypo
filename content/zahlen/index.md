@@ -41,7 +41,15 @@ Ziffern ab fünf stellen werden immer in Dreiergruppen (von rechts) formatiert.
 ## Bankkonten
 Die Internationalen Bankkontonummern (IBAN) bestehen aus maximal 34 Zeichen (ISO 13616-1:2007 Teil 1). Die typografische Schreibweise ist für den Menschen einfacher zu erfassen und trennt von links immer in Gruppen zu vier Zeichen auf (siehe auch DIN 5008).
 
-> CH11&#8239;8888&#8239;8000&#8239;0000&#8239;0000&#8239;0 <br> `CH11¦8888¦8000¦0000¦0000¦0` 
+
+<div class="example-big">
+
+#### Bankkonten
+
+{{example "CH11¦8888¦8000¦0000¦0000¦0" marker="¦" code="&#x202F;"}}
+
+</div>
+
 
 ## Quellen & Infos
 

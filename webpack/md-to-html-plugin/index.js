@@ -7,6 +7,31 @@ var fs = require("fs");
 var path = require("path");
 var marked = require("marked");
 var fm = require("front-matter");
+const Handlebars = require("handlebars");
+
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
+}
+
+Handlebars.registerHelper("example", function(text, options) {
+  let marker = options.hash.marker;
+  let code = options.hash.code;
+
+  var search = new RegExp(escapeRegExp(marker), "g");
+
+  let escapedOutput = `
+### ${text.replace(search, `<span>${code}</span>`)}
+
+<code>${text.replace(
+    search,
+    `</code><code class="space">&ZeroWidthSpace;${Handlebars.escapeExpression(
+      code
+    )}</code><code>`
+  )}</code>
+`;
+
+  return new Handlebars.SafeString(escapedOutput);
+});
 
 var rootPath = path.resolve(__dirname, "../..");
 var mdReg = /\.md$/g;
@@ -67,25 +92,28 @@ function generateHTML({
         let data = fs.readFileSync(filePath, { encoding: "utf8" });
         var content = fm(data);
 
-        data = marked(content.body);
+        // heck yeah let's do handlebars
+        let template = Handlebars.compile(content.body);
+        let body = template(content.attributes);
+
+        data = marked(body);
 
         if (templateContent) {
           data = templateContent.replace("{{markdownContent}}", data);
 
           let rootPath = ".";
           if (currentFolder !== "./") {
-            console.log("currentFolder", currentFolder)
+            console.log("currentFolder", currentFolder);
             rootPath = `.${currentFolder.replace(/[^\/]+/g, "..")}`;
           }
 
           data = data.replace(/\{\{root\}\}/g, rootPath);
 
-          if(rootPath  !== ".") {
-            data = data.replace(/\{\{home\}\}/g, '');
-            data = data.replace(/\{\{\/home\}\}/g, '');
+          if (rootPath !== ".") {
+            data = data.replace(/\{\{home\}\}/g, "");
+            data = data.replace(/\{\{\/home\}\}/g, "");
           } else {
-            data = data.replace(/\{\{home\}\}.*\{\{\/home\}\}/g, '');
-
+            data = data.replace(/\{\{home\}\}.*\{\{\/home\}\}/g, "");
           }
 
           if (content.attributes && content.attributes.title) {
