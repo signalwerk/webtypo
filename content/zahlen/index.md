@@ -58,4 +58,5 @@ Die Internationalen Bankkontonummern (IBAN) bestehen aus maximal 34 Zeichen (ISO
 ### Links
 * [Wikipedia · Dezimaltrennzeichen](https://de.wikipedia.org/wiki/Schreibweise_von_Zahlen#Schweiz_und_Liechtenstein)
 * [Wikipedia · Internationale Bankkontonummer](https://de.wikipedia.org/wiki/Internationale_Bankkontonummer)
+* [Schreibweisungen · Schweizer Bundeskanzlei](https://www.bk.admin.ch/bk/de/home/dokumentation/sprachen/hilfsmittel-textredaktion/schreibweisungen.html)
 </div>
