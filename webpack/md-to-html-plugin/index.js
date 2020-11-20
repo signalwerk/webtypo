@@ -38,9 +38,12 @@ Handlebars.registerHelper("example", function (text, options) {
     var search = new RegExp(escapeRegExp(item[0]), "g");
 
     title = title
-      .replace(search, `<span class="mark mark--${i} mark--${
-        item[2] || "normal"
-      }">${item[1]}</span>`)
+      .replace(
+        search,
+        `<span class="mark mark--${i} mark--${item[2] || "normal"}">${
+          item[1]
+        }</span>`
+      )
       .replace("\\n", `<br />`);
     code = code
       .replace("\\n", "")
@@ -101,11 +104,6 @@ function generateHTML({
         compilation,
       });
     } else {
-      console.log({
-        currentFolder,
-        parentPath,
-        generatePath,
-      });
       let generateFile = path.join(generatePath, file.replace(mdReg, ".html"));
 
       try {
@@ -132,7 +130,6 @@ function generateHTML({
 
           let rootPath = ".";
           if (currentFolder !== "./") {
-            console.log("currentFolder", currentFolder);
             rootPath = `.${currentFolder.replace(/[^\/]+/g, "..")}`;
           }
 
