@@ -22,11 +22,30 @@ function escapeHtml(unsafe) {
     .replace(/'/g, "&#039;");
 }
 
+// tokenize :: String -> Character -> Character -> [String]
+const tokenize = (charDelim, charEsc, str) => {
+  const [token, list, _] = str.split("").reduce(
+    ([aToken, aList, aEsc], x) => {
+      const blnBreak = !aEsc && x === charDelim,
+        blnEscChar = !aEsc && x === charEsc;
+
+      return [
+        blnBreak ? "" : aToken + (blnEscChar ? "" : x),
+        aList.concat(blnBreak ? aToken : []),
+        blnEscChar,
+      ];
+    },
+    ["", [], false]
+  );
+
+  return list.concat(token);
+};
+
 // wow this is ugly...
 Handlebars.registerHelper("example", function (text, options) {
-  let markers = options.hash.marker
-    .split(",")
-    .map((item) => item.split("=").map((item) => item.trim()));
+  let markers = tokenize(",", "\\", options.hash.marker).map((item) =>
+    item.split("=").map((item) => item.trim())
+  );
 
   if (!markers.length) {
     return `### ${text}`;

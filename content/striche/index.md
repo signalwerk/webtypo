@@ -71,7 +71,7 @@ description: Typografische Striche
 
 #### Als Zeichen für Aufzählungen
 
-{{example "– Hallo \n– Welt" marker="–=–"}}
+{{example "– Hallo<br/>– Welt" marker="–=–"}}
 
 </div>
 

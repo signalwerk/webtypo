@@ -13,7 +13,7 @@ Das Dezimaltrennzeichen ist in der Schweiz nicht einheitlich normiert. Dennoch e
 
 #### Empfohlen
 
-{{example "3|14" marker="|=&#x2C;"}}
+{{example "3,14" marker="|=\,"}}
 
 </div>
 
@@ -80,6 +80,10 @@ Die Internationalen Bankkontonummern (IBAN) bestehen aus maximal 34 Zeichen (ISO
 {{example "CH11|8888|8000|0000|0000|0" marker="|=&#x202F;=space"}}
 
 </div>
+
+## Brüche
+[Siehe Schrägstriche](../schraegstrich/)
+
 
 
 ## Quellen & Infos
