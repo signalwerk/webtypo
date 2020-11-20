@@ -23,8 +23,8 @@ description: Typografie im Web
 * [Auslassungspunkte (Ellipse) → …](./auslassungspunkte/)
 * [Schrägstrich](./schraegstrich/)
 * [Zahlen](./zahlen/)
+* [Telefonnummern](./telefonnummern/)
 
 
 ### Sprache
 * [Abkürzungen](./abkuerzungen/)
-* [Telefonnummern](./telefonnummern/)
