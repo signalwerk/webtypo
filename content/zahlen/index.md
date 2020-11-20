@@ -13,7 +13,7 @@ Das Dezimaltrennzeichen ist in der Schweiz nicht einheitlich normiert. Dennoch e
 
 #### Empfohlen
 
-{{example "3,14" marker="|=\,"}}
+{{example "3,14" marker="\,=\,"}}
 
 </div>
 
