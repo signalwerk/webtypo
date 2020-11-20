@@ -375,8 +375,8 @@ header  {
   font-size: 2.4rem;
 
   margin-top: 0.6em;
-  margin-bottom: 0.3em;
-  line-height: 1;
+  margin-bottom: 0.1em;
+  line-height: 1.2;
 }
 .example-big p em {
   font-size: 1rem;
@@ -402,16 +402,46 @@ header  {
   margin-right: 0.4em;
 }
 .example-big h3 span {
+  color: #fff;
   background-color: #0054a2;
   background-color: var(--blue-color);
+  padding-left: 0.05em;
+  padding-right: 0.05em;
 }
-.example-big code.space {
+.example-big h3 span.mark--1 {
+  color: #006984;
+  color: var(--green-color);
+}
+.example-big h3 span.mark--none {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+}
+.example-big h3 span.mark--space {
+  background-color: #0054a2;
+  background-color: var(--blue-color);
+  padding: 0;
+}
+.example-big h3 span.mark--space.mark--1 {
+  background-color: #006984;
+  background-color: var(--green-color);
+}
+.example-big code.mark {
   color: #0054a2;
   color: var(--blue-color);
-  padding-left: 0.1em;
-  padding-right: 0.1em;
+  padding-left: 0.05em;
+  padding-right: 0.05em;
 
   z-index: 99;
+}
+.example-big code.mark--1 {
+  color: #006984;
+  color: var(--green-color);
+}
+.example-big code.mark--none {
+  color: black;
+  padding-left: 0;
+  padding-right: 0;
 }
 @media (min-width: 1000px) {
 html {
