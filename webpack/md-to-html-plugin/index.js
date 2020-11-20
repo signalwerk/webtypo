@@ -22,6 +22,7 @@ function escapeHtml(unsafe) {
     .replace(/'/g, "&#039;");
 }
 
+// https://rosettacode.org/wiki/Tokenize_a_string_with_escaping#JavaScript
 // tokenize :: String -> Character -> Character -> [String]
 const tokenize = (charDelim, charEsc, str) => {
   const [token, list, _] = str.split("").reduce(
