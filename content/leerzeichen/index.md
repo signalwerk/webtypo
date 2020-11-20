@@ -26,10 +26,11 @@ Das breitenlose Leerzeichen gehört [offiziell](http://unicode.org/notes/tn27/) 
 <div class="example-big">
 
 #### Wörter trennen – ohne Trennstrich
-### DieNeue<br/>Typografie.ch
-<code>DieNeue</code><code class="space">&amp;ZeroWidthSpace;</code><code>Typografie.ch</code>
+
+{{example "DieNeue\n|Typografie.ch" marker="|=&ZeroWidthSpace;=space"}}
 
 </div>
+
 
 ## Leerzeichen ohne Umbruch
 Immer wenn man sprachliche Einheiten nicht trennen möchte, kann man diese mit einem umbruchgeschützten Leerzeichen verbinden.
@@ -39,11 +40,11 @@ Immer wenn man sprachliche Einheiten nicht trennen möchte, kann man diese mit e
 #### Wörter mit dazugehöriger Ziffer
 
 
-{{example "Seite|3" marker="|" code="&nbsp;"}}
+{{example "Seite|3" marker="|=&nbsp;=space"}}
 
-{{example "10|Liter" marker="|" code="&nbsp;"}}
+{{example "10|Liter" marker="|=&nbsp;=space"}}
 
-{{example "DIN|9000" marker="|" code="&nbsp;"}}
+{{example "DIN|9000" marker="|=&nbsp;=space"}}
 
 </div>
 
@@ -54,11 +55,11 @@ Immer wenn man sprachliche Einheiten nicht trennen möchte, kann man diese mit e
 #### Firmennamen
 
 
-{{example "Grau|AG" marker="|" code="&nbsp;"}}
+{{example "Grau|AG" marker="|=&nbsp;=space"}}
 
-{{example "Blau|GmbH" marker="|" code="&nbsp;"}}
+{{example "Blau|GmbH" marker="|=&nbsp;=space"}}
 
-{{example "Turing|&amp;|Co." marker="|" code="&nbsp;"}}
+{{example "Turing|&amp;|Co." marker="|=&nbsp;=space"}}
 
 
 </div>
@@ -75,9 +76,9 @@ In Browser Safari gibt es seit längerem einen Bug, wodurch das geschützte schm
 <div class="example-big">
 
 #### Datum
-{{example "18.|August&nbsp;2018" marker="|" code="&#x202F;"}}
+{{example "18.|August&nbsp;2018" marker="|=&#x202F;=space"}}
 
-{{example "18.|8.|2018" marker="|" code="&#x202F;"}}
+{{example "18.|8.|2018" marker="|=&#x202F;=space"}}
 
 
 </div>
@@ -86,9 +87,9 @@ In Browser Safari gibt es seit längerem einen Bug, wodurch das geschützte schm
 
 #### Masseinheiten
 
-{{example "100|km" marker="|" code="&#x202F;"}}
+{{example "100|km" marker="|=&#x202F;=space"}}
 
-{{example "30|°C" marker="|" code="&#x202F;"}}
+{{example "30|°C" marker="|=&#x202F;=space"}}
 
 </div>
 
@@ -96,7 +97,7 @@ In Browser Safari gibt es seit längerem einen Bug, wodurch das geschützte schm
 
 #### Telefonnummern
 
-{{example "+41|78|700|10|10" marker="|" code="&#x202F;"}}
+{{example "+41|78|700|10|10" marker="|=&#x202F;=space"}}
 
 </div>
 
@@ -104,9 +105,9 @@ In Browser Safari gibt es seit längerem einen Bug, wodurch das geschützte schm
 
 #### Berufstitel
 
-{{example "Prof.|Dr.|Moser" marker="|" code="&#x202F;"}}
+{{example "Prof.|Dr.|Moser" marker="|=&#x202F;=space"}}
 
-{{example "Lic.|Jur.|Tina&nbsp;A.|Kramer" marker="|" code="&#x202F;"}}
+{{example "Lic.|Jur.|Tina&nbsp;A.|Kramer" marker="|=&#x202F;=space"}}
 
 </div>
 
@@ -115,7 +116,7 @@ In Browser Safari gibt es seit längerem einen Bug, wodurch das geschützte schm
 
 #### Mathematische Gleichungen
 
-{{example "1|+|2&nbsp;=&nbsp;3" marker="|" code="&#x202F;"}}
+{{example "1|+|2&nbsp;=&nbsp;3" marker="|=&#x202F;=space"}}
 
 </div>
 
@@ -125,9 +126,9 @@ In Browser Safari gibt es seit längerem einen Bug, wodurch das geschützte schm
 
 #### Abkürzung
 
-{{example "z.|B." marker="|" code="&#x202F;"}}
+{{example "z.|B." marker="|=&#x202F;=space"}}
 
-{{example "Nr.|1" marker="|" code="&#x202F;"}}
+{{example "Nr.|1" marker="|=&#x202F;=space"}}
 
 
 
@@ -137,14 +138,14 @@ In Browser Safari gibt es seit längerem einen Bug, wodurch das geschützte schm
 <div class="example-big">
 
 #### Zifferngruppierung
-{{example "20|000" marker="|" code="&#x202F;"}}
+{{example "20|000" marker="|=&#x202F;=space"}}
 
 </div>
 
 <div class="example-big">
 
 #### Paragraf
-{{example "§|10" marker="|" code="&#x202F;"}}
+{{example "§|10" marker="|=&#x202F;=space"}}
 
 </div>
 
@@ -156,7 +157,7 @@ Aber nicht bei Winkelgrad!
 
 #### Winkelgrad
 
-{{example "30°" marker="|" code="&#x202F;"}}
+{{example "30°" marker="|=&#x202F;=space"}}
 
 
 </div>
@@ -171,7 +172,7 @@ Ziffernleerzeichen sind mit Vorsicht zu geniessen. Sie sollten nicht dazu dienen
 #### Alignierende Ziffern
 
 
-{{example "100<br/>|50" marker="|" code="&numsp;"}}
+{{example "100<br/>|50" marker="|=&numsp;=space"}}
 
 
 </div>

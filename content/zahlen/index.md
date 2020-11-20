@@ -46,7 +46,7 @@ Die Internationalen Bankkontonummern (IBAN) bestehen aus maximal 34 Zeichen (ISO
 
 #### Bankkonten
 
-{{example "CH11|8888|8000|0000|0000|0" marker="|" code="&#x202F;"}}
+{{example "CH11|8888|8000|0000|0000|0" marker="|=&#x202F;=space"}}
 
 </div>
 

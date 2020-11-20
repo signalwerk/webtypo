@@ -22,8 +22,8 @@
   font-size: 2.4rem;
 
   margin-top: 0.6em;
-  margin-bottom: 0.3em;
-  line-height: 1;
+  margin-bottom: 0.1em;
+  line-height: 1.2;
 }
 
 .example-big p em {
@@ -51,13 +51,43 @@
   margin-right: 0.4em;
 }
 .example-big h3 span {
+  color: #fff;
   background-color: var(--blue-color);
+  padding-left: 0.05em;
+  padding-right: 0.05em;
+}
+.example-big h3 span.mark--1 {
+  color: var(--green-color);
 }
 
-.example-big code.space {
+.example-big h3 span.mark--none {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+}
+
+.example-big h3 span.mark--space {
+  background-color: var(--blue-color);
+  padding: 0;
+}
+.example-big h3 span.mark--space.mark--1 {
+  background-color: var(--green-color);
+}
+
+.example-big code.mark {
   color: var(--blue-color);
-  padding-left: 0.1em;
-  padding-right: 0.1em;
+  padding-left: 0.05em;
+  padding-right: 0.05em;
 
   z-index: 99;
+}
+
+.example-big code.mark--1 {
+  color: var(--green-color);
+}
+
+.example-big code.mark--none {
+  color: black;
+  padding-left: 0;
+  padding-right: 0;
 }

@@ -13,25 +13,50 @@ function escapeRegExp(string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
 }
 
-Handlebars.registerHelper("example", function(text, options) {
-  let marker = options.hash.marker;
-  let code = options.hash.code;
+function escapeHtml(unsafe) {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
 
-  if (!marker && !code) {
+// wow this is ugly...
+Handlebars.registerHelper("example", function (text, options) {
+  let markers = options.hash.marker
+    .split(",")
+    .map((item) => item.split("=").map((item) => item.trim()));
+
+  if (!markers.length) {
     return `### ${text}`;
   }
 
-  var search = new RegExp(escapeRegExp(marker), "g");
+  var title = text;
+  var code = `<code>${escapeHtml(text)}</code>`;
+  markers.forEach((item, i) => {
+    var search = new RegExp(escapeRegExp(item[0]), "g");
+
+    title = title
+      .replace(search, `<span class="mark mark--${i} mark--${
+        item[2] || "normal"
+      }">${item[1]}</span>`)
+      .replace("\\n", `<br />`);
+    code = code
+      .replace("\\n", "")
+      .replace(`<code>${item[0]}</code>`, item[0])
+      .replace(
+        search,
+        `</code><code class="mark mark--${i} mark--${
+          item[2] || "normal"
+        }">&ZeroWidthSpace;${Handlebars.escapeExpression(item[1])}</code><code>`
+      );
+  });
 
   let escapedOutput = `
-### ${text.replace(search, `<span>${code}</span>`)}
+### ${title}
 
-<code>${text.replace(
-    search,
-    `</code><code class="space">&ZeroWidthSpace;${Handlebars.escapeExpression(
-      code
-    )}</code><code>`
-  )}</code>
+${code}
 `;
 
   return new Handlebars.SafeString(escapedOutput);
@@ -54,14 +79,14 @@ function generateHTML({
   templateContent,
   parentDir,
   parentPath,
-  compilation
+  compilation,
 }) {
   var files = fs.readdirSync(dir),
     currentFolder = parentDir ? dir.replace(parentDir, "") : "./",
     parentPath = parentPath || "./",
     generatePath = path.join(rootPath, exportPath, parentPath, currentFolder);
 
-  files.forEach(file => {
+  files.forEach((file) => {
     var filePath = path.join(dir, file);
     if (fs.statSync(filePath).isDirectory()) {
       try {
@@ -73,13 +98,13 @@ function generateHTML({
         templateContent,
         parentDir: dir,
         parentPath: currentFolder,
-        compilation
+        compilation,
       });
     } else {
       console.log({
         currentFolder,
         parentPath,
-        generatePath
+        generatePath,
       });
       let generateFile = path.join(generatePath, file.replace(mdReg, ".html"));
 
@@ -159,13 +184,13 @@ function MarkdownPlugin(options) {
   }
 }
 
-MarkdownPlugin.prototype.apply = function(compiler) {
+MarkdownPlugin.prototype.apply = function (compiler) {
   compiler.plugin("emit", (compilation, callback) => {
     generateHTML({
       dir: this.filePath,
       exportPath: this.exportPath,
       templateContent: this.templateContent,
-      compilation
+      compilation,
     });
     callback();
   });
