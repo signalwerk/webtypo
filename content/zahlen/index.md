@@ -7,35 +7,66 @@ description: Zahlen
 ## Dezimaltrennzeichen
 Das Dezimaltrennzeichen ist in der Schweiz nicht einheitlich normiert. Dennoch empfiehlt sich die deutsche Schreibweise die sich (mehrheitlich) auf die Schreibweise mit Komma geeinigt hat.
 
-### Empfohlen
-> 3,14
 
-### Eher nicht
-> ~~3.14~~
+
+<div class="example-big">
+
+#### Empfohlen
+
+{{example "3|14" marker="|=&#x2C;"}}
+
+</div>
+
+<div class="example-big">
+
+#### Eher nicht
+{{example "~~3.14~~" marker="|=."}}
+
+
+</div>
 
 
 ## Zifferngruppierung
 Ziffern ab fünf stellen werden immer in Dreiergruppen (von rechts) formatiert.
 
-### Empfohlen
-> 20&#8239;000 <br> `20¦000`
 
-> 20&#8239;000&#8239;000 <br> `20¦000¦000`
+<div class="example-big">
 
-### Nicht
-> ~~2&#8239;000~~ <br>~~`2¦000`~~
+#### Empfohlen
+{{example "20|000" marker="|=&#x202F;=space"}}
 
-> ~~20'000~~ <br>~~`20'000`~~
+{{example "20|000|000" marker="|=&#x202F;=space"}}
 
-> ~~20.000~~ <br>~~`20.000`~~
+</div>
 
 
-## Gleichungen
 
-### Empfohlen
-> 1&#8239;+&#8239;2 = 3<br> `1¦+¦2␣=␣3`
 
-> 1&#8239;–&#8239;2 = –1<br> `1¦–¦2␣=␣−1`
+
+<div class="example-big">
+
+#### Nicht
+{{example "~~2|000~~" marker="|=&#x202F;=space"}}
+
+{{example "~~20'000~~" marker="|=&#x202F;=space"}}
+
+{{example "~~20.000~~" marker="|=&#x202F;=space"}}
+
+</div>
+
+
+## Mathematische Notation
+
+
+<div class="example-big">
+
+#### Empfohlen
+
+{{example "50¦✕¦50␣=␣250" marker="¦=&#x202F;=space,␣=​&nbsp;=space"}}
+
+</div>
+
+
 
 
 ## Bankkonten

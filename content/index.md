@@ -28,10 +28,3 @@ description: Typografie im Web
 ### Sprache
 * [Abkürzungen](./abkuerzungen/)
 * [Telefonnummern](./telefonnummern/)
-
-
-### Notation
-* `¦` Geschützte schmales Leerzeichen
-* `␣` Geschütztes Leerzeichen
-* `·` Leerzeichen
-* `┊` Schmales Leerzeich

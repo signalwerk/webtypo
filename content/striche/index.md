@@ -92,7 +92,7 @@ In der Praxis wird für das Divis jedoch oft das `U+002D – HYPHEN-MINUS` verwe
 
 #### Mathematische Notation
 
-{{example "1¦+¦2¦–¦3 = 0" marker="–=&minus;,¦=&#x202F;=none,␣=​&nbsp;=none"}}
+{{example "1¦+¦2¦–¦3␣=␣0" marker="–=&minus;,¦=&#x202F;=none,␣=​&nbsp;=none"}}
 
 
 </div>

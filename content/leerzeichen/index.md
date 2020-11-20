@@ -114,9 +114,9 @@ In Browser Safari gibt es seit längerem einen Bug, wodurch das geschützte schm
 
 <div class="example-big">
 
-#### Mathematische Gleichungen
+#### Mathematische Notation
 
-{{example "1|+|2&nbsp;=&nbsp;3" marker="|=&#x202F;=space"}}
+{{example "50¦✕¦50␣=␣250" marker="¦=&#x202F;=space,␣=​&nbsp;=space"}}
 
 </div>
 

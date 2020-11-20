@@ -4,29 +4,47 @@ description: Schrägstrich
 ---
 
 # Schrägstrich
-## Schrägstrich
+
+<div class="example-big">
+
+#### Schrägstrich
 Kein Leerzeichen vor oder nach Schrägstrich
-> Schuljahr 2014/2015 <br> `Schuljahr 2014/2015`
 
-## Division
-In Gleichungen ist das Divisionszeichen zu verwenden und kein Schrägstrich
-> 50 ✕ 50 ÷ 5 = b <br> `50¦✕¦50¦÷¦5␣=␣b`
+{{example "Schuljahr 2014|2015" marker="|=/"}}
 
-## Bruchzeichen
-> 1<sup>1</sup>&frasl;<sub>2</sub> (nicht 1<sup>1</sup>/<sub>2</sub>) <br> `HTML: 1<sup>1</sup>&frasl;<sub>2</sub>`
-
-<div class="box">
-
-### Eingabe
-#### Bruchzeichen (THIN SPACE)
-* Text: '&frasl;'
-* HTML: `&frasl;`
-* Unicode DEZ: `&#8260;`
-* Unicode HEX: `&#x2044;`
 
 </div>
 
+
+
+
+
+<div class="example-big">
+
+#### Division
+In Gleichungen ist das Divisionszeichen zu verwenden und kein Schrägstrich
+
+
+{{example "50¦✕¦50¦÷¦5␣=␣b" marker="÷=÷,¦=&#x202F;=none,␣=​&nbsp;=none"}}
+
+</div>
+
+
 ## Brüche
+
+
+
+<div class="example-big">
+
+#### Bruchzeichen in Unicode-Zeichen
+
+
+{{example "1|" marker="|=&frac12;"}}
+
+</div>
+
+
+
 
 | Text | HTML     | Unicode DEZ | Unicode HEX | Unicode Name                   |
 |------|----------|-------------|-------------|--------------------------------|
@@ -50,6 +68,18 @@ In Gleichungen ist das Divisionszeichen zu verwenden und kein Schrägstrich
 | ⅒    | –        | `&‌#8530;`    | `&‌#x2152;`   | Vulgar Fraction One Tenth      |
 
 
+
+<div class="example-big">
+
+#### Bruchzeichen ohne Unicode
+
+
+{{example "1<sup>187</sup>|<sub>200</sub>" marker="|=&frasl;"}}
+
+
+
+
+</div>
 
 
 
