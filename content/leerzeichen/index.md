@@ -269,7 +269,7 @@ Technisch gesehen kein Leerzeichen, aber in diesem Zusammenhang erwähnenswert, 
   
 | Beispiel | Name | HTML |
 |----|----|----|
-| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8288;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">Breitenloses Verbindungszeichen</span><br/><span class="name-unicode">WORD JOINER</span> | Entitätenreferenz: `&ZeroWidthSpace;`<br/>dezimal: `&#8288;`<br/>hexadezimal: `&#x2060;` |
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8288;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">Breitenloses Verbindungszeichen</span><br/><span class="name-unicode">WORD JOINER</span> | dezimal: `&#8288;`<br/>hexadezimal: `&#x2060;` |
 
 </div>
 
