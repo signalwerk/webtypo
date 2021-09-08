@@ -248,6 +248,30 @@ Es gibt diverse nicht druckende Zeichen im Unicode-Standard. Hier eine kleine �
 </div>
 
 
+## Das «Gegenteil» von Leerzeichen
+Technisch gesehen kein Leerzeichen, aber in diesem Zusammenhang erwähnenswert, ist das breitenloses Verbindungszeichen. Ein Zeichen, das anzeigt, dass eine Trennung an dieser Stelle nicht zulässig ist.
+
+
+<div class="example-big">
+
+#### Icon und Text
+
+
+{{example "→|Link" marker="|=&#8288;=space"}}
+
+{{example "Link|↗" marker="|=&#8288;=space"}}
+
+
+</div>
+
+
+<div class="spaces">
+  
+| Beispiel | Name | HTML |
+|----|----|----|
+| <span class="example example--default"><span class="filler filler--prefix"><span class="filler-char">M</span></span><span class="space">&#8288;</span><span class="filler-char"><span class="filler filler--postfix">M</span></span></span> | <span class="name-german">Breitenloses Verbindungszeichen</span><br/><span class="name-unicode">WORD JOINER</span> | Entitätenreferenz: `&ZeroWidthSpace;`<br/>dezimal: `&#8288;`<br/>hexadezimal: `&#x2060;` |
+
+</div>
 
 
 ## Quellen & Infos
