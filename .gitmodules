@@ -1,0 +1,3 @@
+[submodule "packages/signalwerk.documentation.md"]
+	path = packages/signalwerk.documentation.md
+	url = git@github.com:signalwerk/signalwerk.documentation.md.git

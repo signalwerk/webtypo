@@ -3,7 +3,13 @@ title: Typografische Striche
 description: Typografische Striche
 ---
 
-# Typografische Striche
+
+<header>
+
+# {{process.content.frontmatter.title}}
+
+</header>
+
 
 
 

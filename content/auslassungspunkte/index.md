@@ -2,7 +2,14 @@
 title: Auslassungspunkte
 description: Auslassungspunkte
 ---
-# Auslassungspunkte (Ellipse)
+
+
+<header>
+
+# {{process.content.frontmatter.title}}
+
+</header>
+
 ## Buchstaben auslassen
 
 Ohne Wortabstand wenn ein Teil des Wortes ersetzt wird.

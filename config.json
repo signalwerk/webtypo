@@ -1,0 +1,5 @@
+{
+  "package": { "name": "webtypo" },
+  "publish": { "domain": "webtypo.signalwerk.ch" },
+  "repository": { "url": "https://github.com/signalwerk/webtypo" }
+}

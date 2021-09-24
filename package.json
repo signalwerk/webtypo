@@ -1,57 +1,29 @@
 {
   "name": "webtypo",
   "version": "1.0.0",
-  "description": "Content for webtypo",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
-    "lint": "eslint --ext .js --ignore-path .gitignore .",
-    "build": "NODE_ENV=production webpack && npm run gh-pages",
-    "gh-pages": "cp ./public/CNAME ./dist",
+    "start": "webpack-dev-server --config ./packages/signalwerk.documentation.md/webpack.config.js",
+    "deploy": "npm run build && gh-pages -d dist",
+    "build": "NODE_ENV=production webpack --config ./packages/signalwerk.documentation.md/webpack.config.js && cp ./static/CNAME ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/signalwerk/webtypo.git"
   },
-  "keywords": [
-    "PostCSS",
-    "critical styles",
-    "css",
-    "design"
-  ],
+  "keywords": [],
   "author": "Stefan Huber",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/signalwerk/webtypo/issues"
   },
   "homepage": "https://github.com/signalwerk/webtypo#readme",
+  "workspaces": [
+    "./packages/*"
+  ],
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "babel-loader": "^8.0.6",
-    "copy-webpack-plugin": "^5.0.4",
-    "css-loader": "^3.2.0",
-    "css-mqpacker": "^7.0.0",
-    "eslint": "^6.2.2",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "front-matter": "^3.0.2",
-    "marked": "^0.7.0",
-    "mini-css-extract-plugin": "^0.8.0",
-    "postcss-calc": "^7.0.1",
-    "postcss-conditionals": "^2.1.0",
-    "postcss-critical-split": "^2.5.3",
-    "postcss-import": "^12.0.1",
-    "postcss-loader": "^3.0.0",
-    "postcss-nested": "^4.1.2",
-    "postcss-pipeline-webpack-plugin": "^5.1.2",
-    "postcss-preset-env": "^6.7.0",
-    "postcss-simple-vars": "^5.0.2",
-    "url-loader": "^2.1.0",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7",
-    "handlebars": "^4.7.7",
-    "webpack-dev-server": "^3.8.0"
+    "signalwerk.documentation.md": "file:packages/signalwerk.documentation.md"
   }
 }

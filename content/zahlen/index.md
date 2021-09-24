@@ -3,6 +3,13 @@ title: Zahlen
 description: Zahlen
 ---
 
+<header>
+
+# {{process.content.frontmatter.title}}
+
+</header>
+
+
 
 ## Dezimaltrennzeichen
 Das Dezimaltrennzeichen ist in der Schweiz nicht einheitlich normiert. Dennoch empfiehlt sich die deutsche Schreibweise die sich (mehrheitlich) auf die Schreibweise mit Komma geeinigt hat.

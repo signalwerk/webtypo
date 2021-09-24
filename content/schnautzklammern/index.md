@@ -4,7 +4,13 @@ description: Schnautzklammern · Nasenklammern
 ---
 
 
-# Schnautzklammern/Nasenklammern
+<header>
+
+# {{process.content.frontmatter.title}}
+
+</header>
+
+
 ## Verwendung
 Werden häufig in der Programmierung verwendet.
 

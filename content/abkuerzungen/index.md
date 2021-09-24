@@ -3,7 +3,12 @@ title: Abkürzungen
 description: Abkürzungen
 ---
 
-# Abkürzungen
+<header>
+
+# {{process.content.frontmatter.title}}
+
+</header>
+
 
 ## Nicht gebräuchliche Abkürzungen
 Nicht gebräuchliche Abkürzungen immer zuerst einführen. Später im Text kann dann die Abkürzung gebraucht werden.

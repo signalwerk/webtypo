@@ -4,7 +4,12 @@ description: Leerzeichen
 ---
 
 
-# Leerzeichen
+<header>
+
+# {{process.content.frontmatter.title}}
+
+</header>
+
 
 
 <lead>
@@ -304,12 +309,6 @@ Dieser Text wurde in einer ursprünglichen Form in «Publisher 5 · 2019» publi
 
 <style>
 
-
-h1,
-h2 {
-  letter-spacing: 0;
-  text-transform: none;
-}
 
 
   .spaces {

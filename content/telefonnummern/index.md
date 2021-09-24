@@ -3,7 +3,14 @@ title: Telefonnummern
 description: Telefonnummern
 ---
 
-# Telefonnummern
+
+<header>
+
+# {{process.content.frontmatter.title}}
+
+</header>
+
+
 
 ## Regulierung
 Telefonnummern sollten im Web in internationaler Notation gemäss [ITU-T Recommendation E.123](https://www.itu.int/rec/T-REC-E.123-200102-I/en) geschreiben und formatiert werden.

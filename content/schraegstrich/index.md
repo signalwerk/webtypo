@@ -3,7 +3,12 @@ title: Schrägstrich
 description: Schrägstrich
 ---
 
-# Schrägstrich
+<header>
+
+# {{process.content.frontmatter.title}}
+
+</header>
+
 
 <div class="example-big">
 
