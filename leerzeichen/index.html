@@ -373,10 +373,32 @@
 <style>
 
 
-
   .spaces {
     font-size: .8rem;
   }
+
+
+  .spaces .example {
+    --open-sans-fea-onum: "onum" off;
+    --open-sans-fea-pnum: "pnum" off;
+
+    --open-sans-fea-lnum: "lnum" on;
+    --open-sans-fea-tnum: "tnum" on;
+
+    font-feature-settings: var(--open-sans-fea-aalt), var(--open-sans-fea-dnom),
+      var(--open-sans-fea-frac), var(--open-sans-fea-liga), var(
+        --open-sans-fea-lnum
+      ), var(--open-sans-fea-locl), var(--open-sans-fea-numr), var(
+        --open-sans-fea-onum
+      ), var(--open-sans-fea-ordn), var(--open-sans-fea-pnum), var(
+        --open-sans-fea-salt
+      ), var(--open-sans-fea-ss01), var(--open-sans-fea-ss02), var(
+        --open-sans-fea-ss03
+      ), var(--open-sans-fea-subs), var(--open-sans-fea-sups), var(
+        --open-sans-fea-tnum
+      ), var(--open-sans-fea-zero);
+  }
+
 
   .spaces thead {
     font-size: .9rem;
