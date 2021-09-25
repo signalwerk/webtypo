@@ -3,3 +3,4 @@
 ci/.ssh/id_rsa
 ci/.ssh/secret.key
 /__generator/node_modules
+/___generators/content/leerzeichen/node_modules

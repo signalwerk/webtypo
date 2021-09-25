@@ -72,10 +72,14 @@ Immer wenn man sprachliche Einheiten nicht trennen möchte, kann man diese mit e
 ## Schmales Leerzeichen
 Das schmale Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist empfiehlt es sich, die Variante zu nehmen, welche gleichzeitig auch keinen Umbruch zulässt; auch geschütztes schmales Leerzeichen genannt.
 
-In Browser Safari gibt es seit längerem einen Bug, wodurch das geschützte schmale Leerzeichen ohne Breite dargestellt wird:
-* [WebKit Bug](https://bugs.webkit.org/show_bug.cgi?id=172205)
-* [WebKit Bug](https://bugs.webkit.org/show_bug.cgi?id=180744)
-* [WebKit Bug](https://bugs.webkit.org/show_bug.cgi?id=194985)
+
+<small class="small">
+
+In Browser Safari gab es von der Version 10 – 13 einen Bug, so dass das geschützte schmale Leerzeichen ohne Breite dargestellt wurde.
+
+</small>
+
+
 
 
 <div class="example-big">
@@ -291,16 +295,14 @@ Technisch gesehen kein Leerzeichen, aber in diesem Zusammenhang erwähnenswert, 
 
 
 
-<hr class="thick"  />
+
+
+<div class="box">
 
 ### Veröffentlichungen
-Dieser Text wurde in einer ursprünglichen Form in «Publisher 5 · 2019» publiziert.
+* Publisher 5 · 2019
 
-
-<hr class="thick"  />
-
-
-
+</div>
 
 
 
@@ -331,7 +333,11 @@ Dieser Text wurde in einer ursprünglichen Form in «Publisher 5 · 2019» publi
   .spaces td {
     padding-top: .5rem;
     padding-bottom: .5rem;
+  }
+
+  .spaces .example--default  {
     white-space: pre;
+
   }
 
   .spaces .example {

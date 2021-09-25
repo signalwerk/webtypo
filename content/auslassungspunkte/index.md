@@ -1,5 +1,5 @@
 ---
-title: Auslassungspunkte
+title: Auslassungspunkte (Ellipse)
 description: Auslassungspunkte
 ---
 
@@ -17,4 +17,4 @@ Ohne Wortabstand wenn ein Teil des Wortes ersetzt wird.
 
 ## Wörter auslassen
 Mit Wortabstand wenn ein Teil des Satzes oder einer Aufzählung ersetzt wird.
-> «Sie sprach Französisch, Spanisch, Deutsch, …»
+> «Sie sprach Französisch, Spanisch, Deutsch,&nbsp;…»
