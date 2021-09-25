@@ -1,31 +1,52 @@
-<!DOCTYPE html>
 <html lang="de">
   <head>
     <meta charset="utf-8" />
     <title>Webtypo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typografie im Web" />
+    <meta
+      name="description"
+      content="Typografie im Web"
+    />
+    <!-- default styles -->
+    <link rel="preconnect" href="https://fonts.signalwerk.ch" />
     <link
+      href="https://fonts.signalwerk.ch/css/latest/family=OpenSans:ital,wght@0,300..800;1,300..800.css"
       rel="stylesheet"
-      href="./styles/main.critical.css"
-      media="all"
     />
     <link
       rel="stylesheet"
-      href="./styles/main.rest.css"
+      href="https://rawcdn.githack.com/signalwerk/signalwerk.styles/4429fa2/styles/main.critical.css"
       media="all"
     />
-    <script src="./index.js"></script>
+    <link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="https://rawcdn.githack.com/signalwerk/signalwerk.styles/4429fa2/styles/main.rest.css"
+      media="all"
+    />
+
+    <!-- custom styles -->
+    <link
+      rel="stylesheet"
+      href="/styles/main.critical.css"
+      media="all"
+    />
+    <link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="/styles/main.rest.css"
+      media="all"
+    />
+    <script src="/index.js"></script>
   </head>
   <body>
-    
     <article class="content"><header>
 
 <h1 id="typografie-im-web">Typografie im Web</h1>
-<p><small>Signalwerk GmbH – Stefan Huber · 2020 · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a></small></p>
+<p><small>Signalwerk GmbH – Stefan Huber · 2021 · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a></small></p>
 </header>
-
-
 
 <h2 id="inhalt">Inhalt</h2>
 <h3 id="zeichensetzung">Zeichensetzung</h3>
@@ -34,7 +55,6 @@
 <li><a href="./anfuehrungszeichen/">Anführungszeichen → «»</a></li>
 <li><a href="./striche/">Typografische Striche → - –</a></li>
 <li><a href="./schnautzklammern/">Schnautzklammern/Nasenklammern → { }</a></li>
-<li><a href="./auslassungspunkte/">Auslassungspunkte (Ellipse) → …</a></li>
 <li><a href="./schraegstrich/">Schrägstrich</a></li>
 <li><a href="./zahlen/">Zahlen</a></li>
 <li><a href="./telefonnummern/">Telefonnummern</a></li>
@@ -42,6 +62,7 @@
 <h3 id="sprache">Sprache</h3>
 <ul>
 <li><a href="./abkuerzungen/">Abkürzungen</a></li>
+<li><a href="./auslassungspunkte/">Auslassungspunkte (Ellipse) → …</a></li>
 </ul>
 </article>
   </body>

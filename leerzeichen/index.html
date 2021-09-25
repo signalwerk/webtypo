@@ -1,25 +1,59 @@
-<!DOCTYPE html>
 <html lang="de">
   <head>
     <meta charset="utf-8" />
     <title>Leerzeichen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Leerzeichen" />
+    <meta
+      name="description"
+      content="Leerzeichen"
+    />
+    <!-- default styles -->
+    <link rel="preconnect" href="https://fonts.signalwerk.ch" />
     <link
+      href="https://fonts.signalwerk.ch/css/latest/family=OpenSans:ital,wght@0,300..800;1,300..800.css"
       rel="stylesheet"
-      href="./../styles/main.critical.css"
-      media="all"
     />
     <link
       rel="stylesheet"
-      href="./../styles/main.rest.css"
+      href="https://rawcdn.githack.com/signalwerk/signalwerk.styles/4429fa2/styles/main.critical.css"
       media="all"
     />
-    <script src="./../index.js"></script>
+    <link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="https://rawcdn.githack.com/signalwerk/signalwerk.styles/4429fa2/styles/main.rest.css"
+      media="all"
+    />
+
+    <!-- custom styles -->
+    <link
+      rel="stylesheet"
+      href="../styles/main.critical.css"
+      media="all"
+    />
+    <link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="../styles/main.rest.css"
+      media="all"
+    />
+    <script src="../index.js"></script>
   </head>
   <body>
-     <div class="navigation"><div class="navigation__content"><a href="./..">Home</a></div></div> 
-    <article class="content"><h1 id="leerzeichen">Leerzeichen</h1>
+    <div class="navigation">
+      <div class="content navigation__content">
+        <a href="..">Home</a>
+      </div>
+    </div>
+    <article class="content"><header>
+
+<h1 id="leerzeichen">Leerzeichen</h1>
+</header>
+
+
+
 <lead>
 
 <p>Die Zeichensetzung wird im Umfeld der Schweizer Typografie oft sorgsam und gekonnt eingesetzt. Während sich die Fachleute für Druckgrafik oftmals vertieft mit der Erscheinung und Technik in der Mikrotypografie auseinandergesetzt haben, herrscht im Web nicht immer dieselbe Sorgfalt. Insbesondere Leerzeichen sind nicht immer ganz einfach zu setzen …</p>
@@ -67,12 +101,14 @@
 
 <h2 id="schmales-leerzeichen">Schmales Leerzeichen</h2>
 <p>Das schmale Leerzeichen wird typografisch an diversen Stellen eingesetzt. Meist empfiehlt es sich, die Variante zu nehmen, welche gleichzeitig auch keinen Umbruch zulässt; auch geschütztes schmales Leerzeichen genannt.</p>
-<p>In Browser Safari gibt es seit längerem einen Bug, wodurch das geschützte schmale Leerzeichen ohne Breite dargestellt wird:</p>
-<ul>
-<li><a href="https://bugs.webkit.org/show_bug.cgi?id=172205">WebKit Bug</a></li>
-<li><a href="https://bugs.webkit.org/show_bug.cgi?id=180744">WebKit Bug</a></li>
-<li><a href="https://bugs.webkit.org/show_bug.cgi?id=194985">WebKit Bug</a></li>
-</ul>
+<small class="small">
+
+<p>In Browser Safari gab es von der Version 10 – 13 einen Bug, so dass das geschützte schmale Leerzeichen ohne Breite dargestellt wurde.</p>
+</small>
+
+
+
+
 <div class="example-big">
 
 <h4 id="datum">Datum</h4>
@@ -171,12 +207,12 @@
 <div class="example-big">
 
 <h4 id="filler-font-br-mit-nur-einem-zeichen-im-css-laden">Filler-Font <br/> mit nur einem Zeichen im CSS laden</h4>
-<pre><code class="language-css">@font-face {
-  font-family: &#39;FontFiller&#39;;
-  font-style: normal;
-  font-weight: 400;
-  src: url(&quot;./FontFiller.woff2&quot;) format(&quot;woff2&quot;);
-  unicode-range: U+202F;
+<pre><code class="language-css"><span class="hljs-keyword">@font-face</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&#x27;FontFiller&#x27;</span>;
+  <span class="hljs-attribute">font-style</span>: normal;
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+  <span class="hljs-attribute">src</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&quot;./FontFiller.woff2&quot;</span>) <span class="hljs-built_in">format</span>(<span class="hljs-string">&quot;woff2&quot;</span>);
+  unicode-range: U+<span class="hljs-number">202</span>F;
 }</code></pre>
 </div>
 
@@ -184,8 +220,8 @@
 <div class="example-big">
 
 <h4 id="filler-font-im-css-nutzen">Filler-Font im CSS nutzen</h4>
-<pre><code class="language-css">html {
-  font-family: &quot;FontFiller&quot;, &quot;MyRegularFont&quot;, sans-serif;
+<pre><code class="language-css"><span class="hljs-selector-tag">html</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;FontFiller&quot;</span>, <span class="hljs-string">&quot;MyRegularFont&quot;</span>, sans-serif;
 }</code></pre>
 </div>
 
@@ -319,14 +355,15 @@
 
 
 
-<hr class="thick"  />
+
+
+<div class="box">
 
 <h3 id="veröffentlichungen">Veröffentlichungen</h3>
-<p>Dieser Text wurde in einer ursprünglichen Form in «Publisher 5 · 2019» publiziert.</p>
-<hr class="thick"  />
-
-
-
+<ul>
+<li>Publisher 5 · 2019</li>
+</ul>
+</div>
 
 
 
@@ -335,12 +372,6 @@
 
 <style>
 
-
-h1,
-h2 {
-  letter-spacing: 0;
-  text-transform: none;
-}
 
 
   .spaces {
@@ -363,7 +394,11 @@ h2 {
   .spaces td {
     padding-top: .5rem;
     padding-bottom: .5rem;
+  }
+
+  .spaces .example--default  {
     white-space: pre;
+
   }
 
   .spaces .example {
