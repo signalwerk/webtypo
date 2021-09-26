@@ -1,67 +1,132 @@
 [
   {
     "hex": "200B",
+    "de": "Breitenloses Leerzeichen",
+    "context": "M",
+    "class": "default",
+    "name": "ZERO WIDTH SPACE",
     "dec": 8203,
-    "name": "ZERO WIDTH SPACE"
+    "text": "​",
+    "html": "&ZeroWidthSpace;"
   },
   {
     "hex": "0020",
+    "de": "Leerzeichen",
+    "context": "M",
+    "class": "default",
+    "name": "SPACE",
     "dec": 32,
-    "name": "SPACE"
+    "text": " ",
+    "html": null
   },
   {
     "hex": "00A0",
+    "de": "Leerzeichen ohne Umbruch",
+    "context": "M",
+    "class": "default",
+    "name": "NO-BREAK SPACE",
     "dec": 160,
-    "name": "NO-BREAK SPACE"
+    "text": " ",
+    "html": "&nbsp;"
   },
   {
     "hex": "2009",
+    "de": "schmales Leerzeichen",
+    "context": "M",
+    "class": "default",
+    "name": "THIN SPACE",
     "dec": 8201,
-    "name": "THIN SPACE"
+    "text": " ",
+    "html": "&thinsp;"
   },
   {
     "hex": "202F",
+    "de": "schmales Leerzeichen ohne Umbruch",
+    "context": "M",
+    "class": "default",
+    "name": "NARROW NO-BREAK SPACE",
     "dec": 8239,
-    "name": "NARROW NO-BREAK SPACE"
+    "text": " ",
+    "html": null
   },
   {
     "hex": "200A",
+    "de": "Haarspatium",
+    "context": "M",
+    "class": "default",
+    "name": "HAIR SPACE",
     "dec": 8202,
-    "name": "HAIR SPACE"
+    "text": " ",
+    "html": "&hairsp;"
   },
   {
     "hex": "2006",
+    "de": "Sechstelgeviert-Leerzeichen",
+    "context": "M",
+    "class": "default",
+    "name": "SIX-PER-EM SPACE",
     "dec": 8198,
-    "name": "SIX-PER-EM SPACE"
+    "text": " ",
+    "html": null
   },
   {
     "hex": "2005",
+    "de": "Viertelgeviert-Leerzeichen",
+    "context": "M",
+    "class": "default",
+    "name": "FOUR-PER-EM SPACE",
     "dec": 8197,
-    "name": "FOUR-PER-EM SPACE"
+    "text": " ",
+    "html": "&emsp14;"
   },
   {
     "hex": "2004",
+    "de": "Drittelgeviert-Leerzeichen",
+    "context": "M",
+    "class": "default",
+    "name": "THREE-PER-EM SPACE",
     "dec": 8196,
-    "name": "THREE-PER-EM SPACE"
+    "text": " ",
+    "html": "&emsp13;"
   },
   {
     "hex": "2002",
+    "de": "Halbgeviert-Leerzeichen",
+    "context": "M",
+    "class": "default",
+    "name": "EN SPACE",
     "dec": 8194,
-    "name": "EN SPACE"
+    "text": " ",
+    "html": "&ensp;"
   },
   {
     "hex": "2003",
+    "de": "Geviert-Leerzeichen",
+    "context": "M",
+    "class": "default",
+    "name": "EM SPACE",
     "dec": 8195,
-    "name": "EM SPACE"
+    "text": " ",
+    "html": "&emsp;"
   },
   {
     "hex": "2007",
+    "de": "Ziffernleerzeichen",
+    "context": "0",
+    "class": "gray",
+    "name": "FIGURE SPACE",
     "dec": 8199,
-    "name": "FIGURE SPACE"
+    "text": " ",
+    "html": "&numsp;"
   },
   {
     "hex": "2008",
+    "de": "Interpunktionsleerzeichen",
+    "context": ".",
+    "class": "gray",
+    "name": "PUNCTUATION SPACE",
     "dec": 8200,
-    "name": "PUNCTUATION SPACE"
+    "text": " ",
+    "html": "&puncsp;"
   }
 ]
