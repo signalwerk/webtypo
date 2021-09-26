@@ -106,6 +106,14 @@ In der Praxis wird für das Divis jedoch oft das `U+002D – HYPHEN-MINUS` verwe
 
 
 
+## Längsstrich · Pipe · Verkettungszeichen 
+Der Längsstriche kann bei linguistischer Untersuchung den Ort der möglichen Trennung anzeigen. 
+
+> Ty|po|gra|fie
+
+auch 
+
+>  Ty·po·gra·fie
 
 ## Quellen & Infos
 
