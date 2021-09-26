@@ -1,5 +1,5 @@
 ---
-title: Schnautzklammern · Nasenklammern
+title: Akkolade · Schnautzklammern · Nasenklammern
 description: Schnautzklammern · Nasenklammern
 ---
 
@@ -12,7 +12,7 @@ description: Schnautzklammern · Nasenklammern
 
 
 ## Verwendung
-Werden häufig in der Programmierung verwendet.
+Werden häufig in der Programmierung verwendet.  
 
 
 

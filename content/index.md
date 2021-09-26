@@ -19,7 +19,7 @@ description: Typografie im Web
 - [Anführungszeichen → «»](./anfuehrungszeichen/)
 - [Apostroph → ’](./apostroph/)
 - [Typografische Striche → - –](./striche/)
-- [Schnautzklammern/Nasenklammern → { }](./schnautzklammern/)
+- [Akkolade · Schnautzklammern · Nasenklammern → { }](./schnautzklammern/)
 - [Schrägstrich](./schraegstrich/)
 - [Zahlen](./zahlen/)
 - [Telefonnummern](./telefonnummern/)
