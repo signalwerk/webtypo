@@ -30,7 +30,7 @@ Telefonnummern sollten im Web in internationaler Notation gemäss [ITU-T Recomme
 
 #### Deutschland
 
-{{example "+49¦341¦2000000" marker="¦=&#x202F;=space,␣=​&nbsp;=space"}}
+{{example "+49¦30¦23125000" marker="¦=&#x202F;=space,␣=​&nbsp;=space"}}
 
 
 </div>
