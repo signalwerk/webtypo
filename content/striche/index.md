@@ -104,6 +104,16 @@ In der Praxis wird für das Divis jedoch oft das `U+002D – HYPHEN-MINUS` verwe
 </div>
 
 
+## Geviertstrich (—)
+## Auslassungsstrich
+Der Geviertstrich kann in tabelarischer Aufzählungen zur Auslassung von Nachkomastellen verwendet werden. 
+
+<div class="example-big">
+
+{{example "350.00<br/>350.—" marker="—=&mdash;"}}
+
+</div>
+
 
 
 ## Längsstrich · Pipe · Verkettungszeichen 

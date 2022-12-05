@@ -1,6 +1,6 @@
 ---
 title: Akkolade · Schnautzklammern · Nasenklammern
-description: Schnautzklammern · Nasenklammern
+description: Akkolade · Schnautzklammern · Nasenklammern
 ---
 
 
