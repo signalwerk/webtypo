@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v3
+        with:
+          submodules: 'recursive'
 
       - name: ⚡ use node
         uses: actions/setup-node@v3
