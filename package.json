@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "webpack-dev-server --config ./packages/signalwerk.documentation.md/webpack.config.js",
+    "start": "AS_PACKAGE=true webpack-dev-server --config ./packages/signalwerk.documentation.md/webpack.config.js",
     "deploy": "npm run build && gh-pages -d dist",
-    "build": "NODE_ENV=production webpack --config ./packages/signalwerk.documentation.md/webpack.config.js && cp ./static/CNAME ./dist",
+    "build": "NODE_ENV=production AS_PACKAGE=true webpack --config ./packages/signalwerk.documentation.md/webpack.config.js",
+    "update": "node ./packages/signalwerk.documentation.md/src/generator/cli.js update",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
