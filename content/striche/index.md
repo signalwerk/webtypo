@@ -37,6 +37,7 @@ description: Typografische Striche
 
 ## Halbgeviertstrich (–)
 
+Der Halbgeviertstrich (`U+2013 – EN DASH`) wird in nachfolgenden Fällen verwendet:
 
 <div class="example-big">
 
